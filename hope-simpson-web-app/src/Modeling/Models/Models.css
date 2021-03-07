@@ -1,0 +1,60 @@
+.model-triage-container {
+	margin-top: 1em;
+}
+
+.chart-line {
+	fill: none;
+	stroke: blue;
+	stroke-width: 4px;
+}
+.axis text {
+	font-family: 'Poiret One', cursive;
+	font-size: 12pt;
+	color: gray;
+}
+.axis .label {
+	font-size: 22pt;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+	stroke: lightgray;
+	stroke-width: 1px;
+}
+
+.form-input-number {
+	width: 60px;
+	padding: 2px;
+	padding-left: 15px;
+	margin-left: 20px;
+	border: 0;
+	box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+	
+}
+
+.form-input-slider {
+	margin: 5px 0;
+	margin-right: 20px;
+}
+
+.img-align {
+	text-align: center;
+}
+.img-SEIR-model {
+	margin: 10px 0;
+}
+
+#parameters-outer-box {
+	min-width: 650px;
+}
+#parameters-control-box {
+	width: 250px;
+	float: left;
+}
+#parameters-control-image {
+	width: 400px;
+	margin: 45px 0;
+	float: left;
+}
