@@ -9,7 +9,7 @@ This tool will help you download the newest data from:
 - Brazil: [wcota](https://github.com/wcota/covid19br)
 - Argentina: [datos.gob.ar](https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19Casos.csv)
 
-and pack them into one csv named ""
+and pack them into one csv file named "dataset_all.csv"
 
 ### Requirements
 - Unix-based system (Ubuntu 20.04 tested)
@@ -29,5 +29,5 @@ and pack them into one csv named ""
 
 ### Credit
 - Author: [Chang-Yuan (Charlie) Shih](https://github.com/cyshih73)
-- Most code for US and world: [I-No Liao](https://github.com/INoLiao)
-- Most code for Brazil and Argentina: [Vini Da Silva](https://github.com/ViniBR01)
+- Most of the code for US and world: [I-No Liao](https://github.com/INoLiao)
+- Most of the code for Brazil and Argentina: [Vini Da Silva](https://github.com/ViniBR01)
