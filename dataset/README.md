@@ -1,4 +1,7 @@
 # Hope-Simpson Map
+
+Hope-Simpson inspired COVID-19 research project
+
 ## Dataset Tools
 This tool will help you download the newest data from:
 - World(Global), US: [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)
