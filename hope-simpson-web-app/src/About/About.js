@@ -27,7 +27,7 @@ const properties = {
 
 const Slideshow = () => {
   return (
-    <div>
+    <div className={"bodyMarginTop"}>
       <Slide easing="ease" {...properties}>
         <div className="each-slide">
           <div style={{'backgroundImage': `url(${slideImages[0]})`}}>

@@ -26,7 +26,7 @@ class MapGDS extends React.Component{
 
   render() {
     return (
-      <div className="map-container container align-items-center">
+      <div className="map-container container align-items-center bodyMarginTop">
         <ul className="map-gds-navbar nav nav-tabs justify-content">
           <li className="nav-item disabled">
             <a className="nav-link disabled" href="/#">COVID-19 Map <span style={{fontSize: "xx-small"}}>Powered by Google Data Studio</span></a>

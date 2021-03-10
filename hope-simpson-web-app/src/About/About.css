@@ -16,3 +16,6 @@
   background: #efefef;
   text-align: center;
 }
+.bodyMarginTop{
+  margin-top: 120px !important;
+}
