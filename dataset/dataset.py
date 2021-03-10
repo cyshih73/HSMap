@@ -10,6 +10,7 @@ from convertUS import convertUS
 from convertBrazil import convertBrazil
 from convertArgentina import convertArgentina
 from pd2csv import pd2csv
+from dailyInsert import dailyInsert
 
 urls = [  ("World", "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"),
           ("US", "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv"), 
@@ -58,7 +59,8 @@ def main(args):
 
   if args.all:
     print("Converting all the dataframes to one csv...")
-    pd2csv(args.verbose, dfWorld, dfUS, dfBrazil, dfArgentina)
+    dfAll = pd2csv(args.verbose, dfWorld, dfUS, dfBrazil, dfArgentina)
+    dailyInsert(args.verbose, dfAll)
   
   print("Done!")
     
