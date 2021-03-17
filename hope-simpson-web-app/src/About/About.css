@@ -1,7 +1,4 @@
-.about-container {
-  margin-top: 1em;
-}
-
+/*
 .each-slide > div {
   display: flex;
   align-items: center;
@@ -9,7 +6,11 @@
   background-size: cover;
   height: 625px;
 }
-
+*/
+.mainTitle{
+  font-size: 40px;
+  font-weight: bold;
+}
 .each-slide span {
   padding: 20px;
   font-size: 20px;
@@ -18,4 +19,153 @@
 }
 .bodyMarginTop{
   margin-top: 120px !important;
+}
+.slides{
+  padding: 10px 0;
+}
+.slidesInnerDiv{
+  width:80%;
+  margin:0 auto;
+}
+.slides>div{
+  min-height: 400px;
+  color:black;
+  padding: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.slides>div:nth-child(2n+1){
+  background-color:#011627;
+  color:white;
+}
+.slidesInnerDiv{
+  font-size: 20px;
+}
+.slidesInnerDiv .title{
+  font-size: 34px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.welcomeImages{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.welcomeImages img{
+  width:100px;
+  height: 100px;
+  object-fit: contain;
+}
+.welcomeImages > div{
+  width:220px;
+  height:220px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+.welcomeImages > div:nth-child(1){
+  background-color: #655A7C;
+  border: 2px solid #655A7C;
+}
+.welcomeImages > div:nth-child(2){
+  background-color: #AB92BF;
+  border: 2px solid #AB92BF;
+}
+.welcomeImages > div:nth-child(3){
+  background-color: #AFC1D6;
+  border: 2px solid #AFC1D6;
+}
+.welcomeImages > div:nth-child(4){
+  background-color: #CAD49D;
+  border: 2px solid #CAD49D;
+}
+.welcomeImages > div:nth-child(5){
+  background-color: #33658A;
+  border: 2px solid #33658A;
+}
+.welcomeImages > div:nth-child(6){
+  background-color: #D6CA98;
+  border: 2px solid #D6CA98;
+}
+.welcomeImages > div:hover{
+  background-color: transparent;
+}
+
+.myLine{
+  background-color:white;
+  height:2px;
+  margin: 20px 0;
+}
+.inspirationDiv{
+  display:flex;
+}
+.inspirationText{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.distributeContent,.proposalContent,.seasonContent{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.distributeText{
+  margin-right:10px;
+}
+.latitudeImage{
+  width:30%;
+  object-fit: contain;
+}
+.tiltEarthImage{
+  width:75%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.seasonText>div{
+  margin: 10px;
+  margin-left: 80px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.bookCoverImage{
+  width:30%;
+  object-fit: contain;
+}
+@media only screen and (max-width: 1200px) {
+  .slidesInnerDiv{
+    width:90%
+  }
+}
+@media only screen and (max-width: 900px) {
+  .inspirationDiv,.proposalContent,.seasonContent{
+    flex-direction: column;
+  }
+  .distributeContent{
+    flex-direction: column-reverse;
+  }
+  .bookCoverImage,.latitudeImage{
+    width:100%;
+    height:250px;
+  }
+  .latitudeImage{
+    width:100%;
+    height:500px;
+    margin: 10px 0;
+  }
+  .inspirationText{
+    margin-top: 20px;
+  }
+  .tiltEarthImage{
+    width:100%;
+  }
 }

@@ -122,8 +122,30 @@
     margin-bottom: 5px;
 }
 .homeTableau{
+    padding: 10px;
+    box-sizing: border-box;
+    resize: horizontal;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
     display:flex;
+    align-items: center;
     justify-content: center;
+}
+
+.homeTableau > div{
+    width:80%;
+    padding-bottom: 75%;
+    position:relative;
+    overflow: hidden;
+}
+.homeTableau iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    overflow: hidden;
 }
 .tableauGraph{
     height: 1050px;
@@ -149,20 +171,4 @@
 #section3 .title{
     font-size: 35px;
     text-decoration: underline;
-}
-.caseDetails{
-    font-size: 26px;
-}
-.caseDetails > div{
-    margin: 8px;
-    padding: 5px;
-}
-.caseDetails > div:not(:last-child){
-    border-bottom: 1px solid #540D6E;
-}
-.caseDetails > div >div:nth-child(1){
-
-}
-.caseDetails > div >div:nth-child(2){
-    color: #3B60E4;
 }
