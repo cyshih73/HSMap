@@ -22,6 +22,7 @@
 }
 .slides{
   padding: 10px 0;
+  overflow:hidden
 }
 .slidesInnerDiv{
   width:80%;
@@ -132,18 +133,190 @@
 }
 .seasonText>div{
   margin: 10px;
-  margin-left: 80px;
   padding: 10px;
-  border: 1px solid white;
+
   border-radius: 5px;
+  background-color:#011627;
+  position: relative;
+
 }
+.seasonText>div::after{
+  --borderSize:1px;
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderSize));
+  left: calc(-1 * var(--borderSize));
+  height: calc(100% + var(--borderSize) * 2);
+  width: calc(100% + var(--borderSize) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  animation: animatedgradient 1s ease alternate infinite;
+  background-size: 300% 300%;
+  z-index: -1;
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .bookCoverImage{
   width:30%;
   object-fit: contain;
 }
+.workContent{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.workText{
+  flex:1;
+}
+.workImages{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.workImages img{
+  object-fit: contain;
+}
+.workGithubImage{
+  width:35%;
+}
+
+
+.regionImage img{
+  width:100%;
+  object-fit: contain;
+  height:400px;
+}
+.regionText{
+  margin-top:20px;
+  display:flex;
+  justify-content: center;
+}
+
+
+.databaseText a{
+  padding: 3px;
+  margin: 10px;
+  background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+  background-size: 100% 1100%;
+  animation: clickMe 1s ease-in infinite;
+  border-radius: 10px;
+}
+.hypothesisText{
+  text-align: center;
+  margin: 10px;
+}
+.hypothesisText span{
+  background-color: #CAE5FF;
+  color:black;
+  padding:5px;
+  border-radius: 5px;
+}
+.hypothesisImage{
+  width:100%;
+  height:450px;
+  object-fit: contain;
+}
+.initialContent,.phaseContent{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.initialImages,.phaseImage{
+  width:30%;
+}
+.phaseImage{
+  margin-left: 20px;
+}
+.initialImages img, .phaseImage img{
+  width:90%;
+  height:300px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.initialImages>div:nth-child(n){
+  text-align: left;
+}
+.initialImages>div:nth-child(2n){
+  text-align: right;
+}
+/*
+.phaseImage>div:nth-child(n){
+  text-align: right;
+}
+.phaseImage>div:nth-child(2n){
+  text-align: left;
+}*/
+.phaseCompareImageDiv{
+  text-align: center;
+}
+.nextImage{
+  text-align: center;
+}
+.nextImage img{
+  width: 40%;
+}
+.nextImage img:not(:first-child){
+  margin-left: 10px;
+}
+@keyframes clickMe{
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
+@media only screen and (max-width: 1500px) {
+  .initialContent{
+    flex-direction: column;
+  }
+  .initialImages{
+    width:100%;
+    display:flex;
+    justify-content: center;
+  }
+  .initialImages img{
+    width:100%;
+    height:250px;
+  }
+  .initialImages>div{
+    text-align: center;
+    margin: 10px;
+  }
+
+  .phaseContent{
+    flex-direction: column-reverse;
+  }
+  .initialImages,.phaseImage{
+    display:flex;
+    width:100%;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .slidesInnerDiv{
     width:90%
+  }
+  .workImages img{
+    width: 30%;
+  }
+
+  .nextImage img{
+    width:45%;
+  }
+
+  .workContent{
+    flex-direction: column;
+  }
+  .workGithubImage{
+    width:70%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -168,4 +341,8 @@
   .tiltEarthImage{
     width:100%;
   }
+  .nextImage img{
+    width:60%;
+  }
+
 }

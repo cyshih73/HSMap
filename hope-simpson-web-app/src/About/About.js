@@ -31,14 +31,278 @@ const properties = {
 const Slideshow = () => {
   return (
     <div className={"slides"}>
-      <Welcome/>
-      <Inspiration/>
-      <Distribution/>
-      <Proposal/>
-      <SeasonOutBreak/>
+        <Welcome/>
+        <Inspiration/>
+        <Distribution/>
+        <Proposal/>
+        <SeasonOutBreak/>
+        <Work/>
+        <Region/>
+        <Database/>
+        <Hypothesis/>
+        <Initial/>
+        <Phase/>
+        <Next/>
     </div>
   )
 };
+const Next=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title nextTitle"}>What we find: phase shifts and moderated responses</div>
+                <div className={"nextContent"}>
+                    <div className={"nextText"}>
+                        <ul>
+                            <li>
+                                A new cohort of students is forming:
+                                <ul>
+                                    <li>Former team members and several new team members</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Improve data visualization tools
+                            </li>
+                            <li>
+                                VM support for automatic daily update of databases.
+                            </li>
+                            <li>
+                                Let user compare histograms, etc.
+                            </li>
+                            <li>
+                                Looking at higher resolution analysis both temporally (weekly) and spatially (latitude)
+                            </li>
+                            <li>
+                                Explore network based models that incorporate travel
+                            </li>
+                            <li>
+                                And more!
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={"nextImage"}>
+                        <img src={"/images/initialItaly.png"} className={"initialItalyImage"}/>
+                        <img src={"/images/initialVictoria.png"} className={"initialVictoriaImage"}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+const Phase=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title phaseTitle"}>What we find: phase shifts and moderated responses</div>
+                <div className={"phaseContent"}>
+                    <div>
+                        <div className={"phaseText"}>
+                            <ul>
+                                <li>
+                                    We can overlay regions of the world to see different patterns.
+                                </li>
+                                <li>
+                                    Overlay N temperate (Italy) and S temperate  (Victoria, Australia)
+                                    <ul>
+                                        <li>The winter spike in  Victoria overlaps the summer quiet of Italy</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Compare tropical regions that show an initial outbreak followed by a more moderated response
+                                    <ul>
+                                        <li>Florida, USA</li>
+                                        <li>Egypt</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className={"phaseCompareImageDiv"}>
+                            <img src={"/images/phaseCompare.png"} className={"phaseCompareImage"}/>
+                        </div>
+                    </div>
+                    <div className={"phaseImage"}>
+                        <div>
+                            <img src={"/images/phaseFlorida.png"} className={"phaseFloridaImage"}/>
+                        </div>
+                        <div>
+                            <img src={"/images/phaseEgypt.png"} className={"phaseEgyptImage"}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+const Initial=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title initialTitle"}>What we find: initial conditions</div>
+                <div className={"initialContent"}>
+                    <div className={"initialImages"}>
+                        <div>
+                            <img src={"/images/initialItaly.png"} className={"initialItalyImage"}/>
+                        </div>
+                        <div>
+                            <img src={"/images/initialVictoria.png"} className={"initialVictoriaImage"}/>
+                        </div>
+                    </div>
+                    <div className={"initialText"}>
+                        <ul>
+                            <li>
+                                COVID-19 is referred to as novel as it is new and thus we have little resistance to it, currently.
+                            </li>
+                            <li>
+                                The first significant cases were seen in Italy (N Temperate) in February, after the December solstice.
+                                <ul>
+                                    <li>They had the drop off in the summer</li>
+                                    <li>They are now into the winter</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Victoria Australia (S Temperate)
+                                <ul>
+                                    <li>Had a small exposure during their summer.</li>
+                                    <li>They have gone through a complete winter and saw the spike Hope-Simpson might expect to see.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    )
+}
+const Hypothesis=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title hypothesisTitle"}>Hope-Simpson hypothesis of dynamics of virus spread</div>
+                <div className={"hypothesisContent"}>
+                    <div className={"hypothesisText"}>
+                        <span>Chart is a histogram of weekly confirmed COVID-19 cases (N = 935k) in Italy (Latitude 41.87)</span>
+                    </div>
+                    <img src={"/images/hypothesis.png"} className={"hypothesisImage"}/>
+                </div>
+            </div>
+        </div>
+    )
+}
+const Database=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title databaseTitle"}>Our Databases</div>
+                <div className={"databaseContent"}>
+                    <div className={"databaseText"}>
+                        <ul>
+                            <li>
+                                Global and the US data from JHU GitHub repo: <a target="_blank" href={"https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series"}>Click Me!</a>
+                                <ul>
+                                    <li>The dataset is located at "COVID-19/csse_covid_19_data/csse_covid_19_time_series/”</li>
+                                    <li>Global and US data are from "time_series_covid19_confirmed_global.csv" and "time_series_covid19_confirmed_US.csv", respectively</li>
+                                    <li>Harris County data also comes from here.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Brazil data:<a target="_blank" href={"https://github.com/wcota/covid19br"}>Click Me!</a>
+                            </li>
+                            <li>
+                                Argentina data:<a target="_blank" href={"https://datos.gob.ar/dataset/salud-covid-19-casos-registrados-republica-argentina"}>Click Me!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+
+}
+const Region=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title regionTitle"}>Regional Samples</div>
+                <div className={"regionContent"}>
+                    <div className={"regionImage"}>
+                        <img src={"/images/worldMap.png"}/>
+                    </div>
+                    <div className={"regionText"}>
+                        <ul>
+                            <li>We chose a number of sample regions from each of the four zones.</li>
+                            <li>
+                                Our criteria was
+                                <ul>
+                                    <li>Geographically smaller regions i.e. US states rather than entire United States.</li>
+                                    <li>Regions that tend to be localized to a smaller range of latitudes i.e. Wisconsin rather than California</li>
+                                    <li>Regions that have a stable and accessible record of testing.</li>
+                                    <li>Avoid oversampling a zone i.e. don’t just look at Europe and US.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+const Work=()=>{
+    return (
+        <div>
+            <div className={"slidesInnerDiv"}>
+                <div className={"title workTitle"}>Our work: A Hope-Simpson inspired look at COVID-19 cases </div>
+                <div className={"workContent"}>
+                    <div className={"workText"}>
+                        <div>
+                            <ul>
+                                <li>
+                                    Inspiration from Hope-Simpson
+                                    <ul>
+                                        <li>
+                                            Global perspective
+                                            <ul>
+                                                <li>Pull from databases with global case information, including COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University and others.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Zones of latitude
+                                            <ul>
+                                                <li>Geographic samples organized according to the same four zones of latitude used by Hope-Simpson.</li>
+                                                <li>Adjust geographic sampling to pick smaller regions in each zone of latitude.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            View distribution of cases over time
+                                            <ul>
+                                                <li>Display histogram of cases on a weekly basis</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Tools that Hope-Simpson didn’t have
+                                    <ul>
+                                        <li>Tableau</li>
+                                        <li>Google Data Studio</li>
+                                        <li>Python and Matlab</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src={"/images/workGithub.png"} className={"workGithubImage"}/>
+                </div>
+                <hr/>
+                <div className={"workImages"}>
+                    <img src={"/images/tableauLogo.png"} className={"tableauLogoImage"}/>
+                    <img src={"/images/googleDataStudioLogo.png"} className={"googleDataStudioLogoImage"}/>
+                    <img src={"/images/mathWorksLogo.png"} className={"mathWorksLogoImage"}/>
+                </div>
+            </div>
+        </div>
+    )
+}
 const SeasonOutBreak=()=>{
   return (
       <div>
@@ -226,11 +490,8 @@ function About() {
     gsap.from('.welcomeText',{opacity:0,y:100,duration:1});
     gsap.from('.welcomeTitle',{opacity:0,y:100,duration:1});
 
-      /*
-    gsap.from('.welcomeImages',{opacity:0,x:-100,duration:1,scrollTrigger:{
-        trigger:'.welcomeImages',
-        start: "center 80%"
-      }});*/
+
+
     gsap.from('.bookCoverImage',{opacity:0,x:-100,duration:1,scrollTrigger:{
         trigger:'.bookCoverImage',
         start: "top 80%"
@@ -267,12 +528,12 @@ function About() {
         trigger:'.proposalText',
         start: "top 80%"
       }});
-    /*
+
     gsap.from('.proposalContent .latitudeImage',{opacity:0,x:-100,duration:1,scrollTrigger:{
         trigger:'.proposalContent .latitudeImage',
         start: "center 80%"
       }});
-*/
+
     gsap.from('.seasonTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
         trigger:'.seasonTitle',
         start: "center 80%"
@@ -286,6 +547,115 @@ function About() {
         start: "center 80%"
       }});
 
+      gsap.from('.workTitle',{opacity:0,y:-100,duration:1,scrollTrigger:{
+              trigger:'.workTitle',
+              start: "center 80%"
+          }});
+      gsap.from('.workText',{opacity:0,x:-100,duration:1,scrollTrigger:{
+              trigger:'.workText',
+              start: "center 80%"
+          }});
+      gsap.from('.workGithubImage',{opacity:0,x:100,duration:1,scrollTrigger:{
+              trigger:'.workGithubImage',
+              start: "center 80%"
+          }});
+      gsap.from('.workImages',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.workImages',
+              start: "center 90%"
+          }});
+
+      gsap.from('.regionTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.regionTitle',
+              start: "center 80%"
+          }});
+
+      gsap.from('.regionImage',{opacity:0,x:100,y:-100,duration:1,scrollTrigger:{
+              trigger:'.regionImage',
+              start: "center 80%"
+          }});
+
+      gsap.from('.regionText',{opacity:0,x:-100,y:100,duration:1,scrollTrigger:{
+              trigger:'.regionText',
+              start: "center 90%"
+          }});
+
+      gsap.from('.databaseTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.databaseTitle',
+              start: "center 80%"
+          }});
+
+      gsap.from('.databaseText',{opacity:0,x:100,duration:1,scrollTrigger:{
+              trigger:'.databaseText',
+              start: "center 80%"
+          }});
+
+
+      //t1.staggerFrom('.databaseText',1,{y:30,ease: Power3.easeOut,opacity:0},0.35);
+      gsap.from('.hypothesisTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.hypothesisTitle',
+              start: "center 80%"
+          }});
+      gsap.from('.hypothesisText',{opacity:0,x:100,duration:1,scrollTrigger:{
+              trigger:'.hypothesisText',
+              start: "center 80%"
+          }});
+      gsap.from('.hypothesisImage',{opacity:0,x:-100,duration:1,scrollTrigger:{
+              trigger:'.hypothesisImage',
+              start: "center 80%"
+          }});
+      gsap.from('.initialTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.initialTitle',
+              start: "center 80%"
+          }});
+      gsap.from('.initialImages .initialItalyImage',{opacity:0,x:100,duration:1,scrollTrigger:{
+              trigger:'.initialImages .initialItalyImage',
+              start: "center 80%"
+          }});
+      gsap.from('.initialImages .initialVictoriaImage',{opacity:0,x:-100,duration:1,scrollTrigger:{
+              trigger:'.initialImages .initialVictoriaImage',
+              start: "center 80%"
+          }});
+      gsap.from('.initialText',{opacity:0,x:100,y:100,duration:1,scrollTrigger:{
+              trigger:'.initialText',
+              start: "center 80%"
+          }});
+
+      gsap.from('.phaseTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.phaseTitle',
+              start: "center 80%"
+          }});
+      gsap.from('.phaseText',{opacity:0,x:100,y: 100,duration:1,scrollTrigger:{
+              trigger:'.phaseText',
+              start: "center 80%"
+          }});
+      gsap.from('.phaseCompareImageDiv',{opacity:0,x:-100,duration:1,scrollTrigger:{
+              trigger:'.phaseCompareImageDiv',
+              start: "center 80%"
+          }});
+      gsap.from('.phaseFloridaImage',{opacity:0,y:-100,duration:1,scrollTrigger:{
+              trigger:'.phaseFloridaImage',
+              start: "center 80%"
+          }});
+      gsap.from('.phaseEgyptImage',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'.phaseEgyptImage',
+              start: "center 80%"
+          }});
+      gsap.from('nextTitle',{opacity:0,y:100,duration:1,scrollTrigger:{
+              trigger:'nextTitle',
+              start: "center 90%"
+          }});
+      gsap.from('.nextImage .initialItalyImage',{opacity:0,x:-100,duration:1,scrollTrigger:{
+              trigger:'.nextImage .initialItalyImage',
+              start: "center 90%"
+          }});
+      gsap.from('.nextText',{opacity:0,x:100,duration:1,scrollTrigger:{
+              trigger:'.nextText',
+              start: "center 90%"
+          }});
+      gsap.from('.nextImage .initialVictoriaImage',{opacity:0,y:-100,duration:1,scrollTrigger:{
+              trigger:'.nextImage .initialVictoriaImage',
+              start: "center 90%"
+          }});
   })
   return (
     <div className="bodyMarginTop">
