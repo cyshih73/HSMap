@@ -12,7 +12,7 @@ const dashboards = [
   {
     name: 'North to South Slice',
     url: 'northtosouthslice',
-    tableauUrl: 'https://public.tableau.com/views/hs-north-to-south-slice/Dashboard-NorthToSouthSlice'
+    tableauUrl: 'https://prod-useast-b.online.tableau.com/t/joeypaitableau/views/hs-north-to-south-slice/Dashboard-NorthToSouthSlice?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link'
   }
 ];
 
