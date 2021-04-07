@@ -3,9 +3,9 @@ import './MapGDS.css';
 
 const GDS_REPORT_PATHS = [
   // Overview
-  "https://datastudio.google.com/embed/reporting/30c1e5a8-6cbf-43ba-9796-b4bb042082f6/page/TxgjB",
+  "https://datastudio.google.com/embed/reporting/5118bc09-674b-4204-a7a4-087c81deb00a/page/TxgjB",
   // Four Zones Concept
-  "https://datastudio.google.com/embed/reporting/30c1e5a8-6cbf-43ba-9796-b4bb042082f6/page/cm8pB",
+  "https://datastudio.google.com/embed/reporting/5118bc09-674b-4204-a7a4-087c81deb00a/page/cm8pB",
   // Province/State Slice
   "https://datastudio.google.com/embed/reporting/30c1e5a8-6cbf-43ba-9796-b4bb042082f6/page/dF9pB"
 ];
