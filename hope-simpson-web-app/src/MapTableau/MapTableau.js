@@ -8,7 +8,7 @@ function MapTableau () {
   let { path, url } = useRouteMatch();
 
   return (
-    <div className={"map-container container align-items-center"}>
+    <div className={"map-container container align-items-center bodyMarginTop"}>
       <div className="map-tableau-navbar">
         <ul className="nav nav-tabs">
           <li className="nav-item disabled">
