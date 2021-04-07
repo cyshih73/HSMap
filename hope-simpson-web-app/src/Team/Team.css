@@ -8,7 +8,268 @@
     font-size: small;
     margin: 0 0 0 0.5em;
 }
-
 .card {
     border: none;
 }
+.arrowDown{
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    height:20px;
+    width: 20px;
+    animation: arrowMove 0.5s ease-in-out infinite;
+}
+@keyframes arrowMove {
+    0%{
+        transform: rotate(45deg) translate(10,10px);
+    }
+    50%{
+        transform: rotate(45deg) translate(10px,10px);
+    }
+}
+.schoolImage{
+    height:100vh;
+}
+.schoolImage img{
+    height: 100vh;
+    object-fit: cover;
+}
+.schoolImage .scrollForMore{
+}
+.schoolImage .content{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color:#0D1317;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.schoolImage .scrollForMore{
+    position:absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.rayDiv{
+    margin: 20px 0;
+    text-align: center;
+    height: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rayDivName{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px;
+    display:flex;
+}
+.rayDiv>div{
+    /*
+    display:flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.rayImageDiv img{
+    width:230px;
+    height:230px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.rayInfo{
+    margin-left: 20px;
+    text-align: center;
+}
+.rayInfo>div{
+    margin: 10px;
+}
+.rayInfo .rayName,.rayInfo .rayTitle,.rayInfo .rayOrg{
+    display:flex;
+    justify-content: center;
+}
+.rayInfo .rayName{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.rayInfo .rayRoles{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.rayInfo .rayRoles>div{
+    padding: 5px;
+    background-color:#29335C;
+    color:white;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.eachProfile{
+    /*border: 1px solid gray;*/
+    border-radius: 15px;
+    /*box-shadow: black 0px 0px 5px;*/
+    width:250px;
+    height:280px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.eachProfile:hover .profileFront{
+    transform: rotateY(-180deg);
+}
+.eachProfile:hover .profileBack{
+    transform: rotateY(0deg);
+}
+.profileFront{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+}
+.profileBack{
+    background-color: #0D1317;
+    color:white;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.profileAvatar{
+    text-align: center;
+}
+.profileAvatar img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 20px 40px -15px rgba(0, 0, 0, 0.7);
+}/*
+.profileAvatar:after{
+    content:'';
+    position: absolute;
+    left:50%;
+    bottom: 67px;
+    transform: translateX(-50%);
+    width:60%;
+    height:10px;
+    background-color:rgba(0,0,0,0.2);
+    z-index: -1;
+    border-radius: 50%;
+}*/
+.profileFrontName{
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+.profileBack{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileBack .profileBackName{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.profileBack .profileInfo{
+    text-align: center;
+}
+.profileRoles{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profileRoles > div{
+    background-color: #EDF7B5;
+    color:black;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/**************************************
+team
+************************************* */
+.years{
+    width: 80%;
+    margin: 0 auto;
+}
+.years .yearName{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    display:flex;
+}
+.profiles{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.profileDiv{
+    margin: 5px;
+}
+.lineFrom2021To2020,.lineFrom2020ToEnd{
+    top:0;
+    left:20px;
+    position: absolute;
+    height:100%;
+    width:20px;
+    z-index: -1;
+}
+.lineFrom2021To2020 .arrowLine,.lineFrom2020ToEnd .arrowLine{
+    width:5px;
+    height:95%;
+    margin: 0 auto;
+    background-color:black;
+}
+.lineFrom2021To2020 .arrow,.lineFrom2020ToEnd .arrow{
+    position:absolute;
+    left: 0;
+    top:95%;
+    height:5%;
+    width:100%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+}
+
+
+
+
