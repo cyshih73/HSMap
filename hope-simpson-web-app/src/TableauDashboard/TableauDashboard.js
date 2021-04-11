@@ -13,7 +13,7 @@ function TableauDashboard({ url, options }) {
   };
 
   return (
-    <div>
+    <div className={"bodyMarginTop"}>
       <div ref={ ref } id="tableau-dashboard" />
     </div>
   );

@@ -1,7 +1,4 @@
-.about-container {
-  margin-top: 1em;
-}
-
+/*
 .each-slide > div {
   display: flex;
   align-items: center;
@@ -9,10 +6,343 @@
   background-size: cover;
   height: 625px;
 }
-
+*/
+.mainTitle{
+  font-size: 40px;
+  font-weight: bold;
+}
 .each-slide span {
   padding: 20px;
   font-size: 20px;
   background: #efefef;
   text-align: center;
+}
+.bodyMarginTop{
+  margin-top: 120px !important;
+}
+.slides{
+  padding: 10px 0;
+  overflow:hidden
+}
+.slidesInnerDiv{
+  width:80%;
+  margin:0 auto;
+}
+.slides>div{
+  min-height: 400px;
+  color:black;
+  padding: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.slides>div:nth-child(2n+1){
+  background-color:#011627;
+  color:white;
+}
+.slidesInnerDiv{
+  font-size: 20px;
+}
+.slidesInnerDiv .title{
+  font-size: 34px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.welcomeImages{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.welcomeImages img{
+  width:100px;
+  height: 100px;
+  object-fit: contain;
+}
+.welcomeImages > div{
+  width:220px;
+  height:220px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+.welcomeImages > div:nth-child(1){
+  background-color: #655A7C;
+  border: 2px solid #655A7C;
+}
+.welcomeImages > div:nth-child(2){
+  background-color: #AB92BF;
+  border: 2px solid #AB92BF;
+}
+.welcomeImages > div:nth-child(3){
+  background-color: #AFC1D6;
+  border: 2px solid #AFC1D6;
+}
+.welcomeImages > div:nth-child(4){
+  background-color: #CAD49D;
+  border: 2px solid #CAD49D;
+}
+.welcomeImages > div:nth-child(5){
+  background-color: #33658A;
+  border: 2px solid #33658A;
+}
+.welcomeImages > div:nth-child(6){
+  background-color: #D6CA98;
+  border: 2px solid #D6CA98;
+}
+.welcomeImages > div:hover{
+  background-color: transparent;
+}
+
+.myLine{
+  background-color:white;
+  height:2px;
+  margin: 20px 0;
+}
+.inspirationDiv{
+  display:flex;
+}
+.inspirationText{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.distributeContent,.proposalContent,.seasonContent{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.distributeText{
+  margin-right:10px;
+}
+.latitudeImage{
+  width:30%;
+  object-fit: contain;
+}
+.tiltEarthImage{
+  width:75%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.seasonText>div{
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 5px;
+  background-color:#011627;
+  position: relative;
+
+}
+.seasonText>div::after{
+  --borderSize:1px;
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderSize));
+  left: calc(-1 * var(--borderSize));
+  height: calc(100% + var(--borderSize) * 2);
+  width: calc(100% + var(--borderSize) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  animation: animatedgradient 1s ease alternate infinite;
+  background-size: 300% 300%;
+  z-index: -1;
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bookCoverImage{
+  width:30%;
+  object-fit: contain;
+}
+.workContent{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.workText{
+  flex:1;
+}
+.workImages{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.workImages img{
+  object-fit: contain;
+}
+.workGithubImage{
+  width:35%;
+}
+
+
+.regionImage img{
+  width:100%;
+  object-fit: contain;
+  height:400px;
+}
+.regionText{
+  margin-top:20px;
+  display:flex;
+  justify-content: center;
+}
+
+
+.databaseText a{
+  padding: 3px;
+  margin: 10px;
+  background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+  background-size: 100% 1100%;
+  animation: clickMe 1s ease-in infinite;
+  border-radius: 10px;
+}
+.hypothesisText{
+  text-align: center;
+  margin: 10px;
+}
+.hypothesisText span{
+  background-color: #CAE5FF;
+  color:black;
+  padding:5px;
+  border-radius: 5px;
+}
+.hypothesisImage{
+  width:100%;
+  height:450px;
+  object-fit: contain;
+}
+.initialContent,.phaseContent{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.initialImages,.phaseImage{
+  width:30%;
+}
+.phaseImage{
+  margin-left: 20px;
+}
+.initialImages img, .phaseImage img{
+  width:90%;
+  height:300px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.initialImages>div:nth-child(n){
+  text-align: left;
+}
+.initialImages>div:nth-child(2n){
+  text-align: right;
+}
+/*
+.phaseImage>div:nth-child(n){
+  text-align: right;
+}
+.phaseImage>div:nth-child(2n){
+  text-align: left;
+}*/
+.phaseCompareImageDiv{
+  text-align: center;
+}
+.nextImage{
+  text-align: center;
+}
+.nextImage img{
+  width: 40%;
+}
+.nextImage img:not(:first-child){
+  margin-left: 10px;
+}
+@keyframes clickMe{
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
+@media only screen and (max-width: 1500px) {
+  .initialContent{
+    flex-direction: column;
+  }
+  .initialImages{
+    width:100%;
+    display:flex;
+    justify-content: center;
+  }
+  .initialImages img{
+    width:100%;
+    height:250px;
+  }
+  .initialImages>div{
+    text-align: center;
+    margin: 10px;
+  }
+
+  .phaseContent{
+    flex-direction: column-reverse;
+  }
+  .initialImages,.phaseImage{
+    display:flex;
+    width:100%;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .slidesInnerDiv{
+    width:90%
+  }
+  .workImages img{
+    width: 30%;
+  }
+
+  .nextImage img{
+    width:45%;
+  }
+
+  .workContent{
+    flex-direction: column;
+  }
+  .workGithubImage{
+    width:70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .inspirationDiv,.proposalContent,.seasonContent{
+    flex-direction: column;
+  }
+  .distributeContent{
+    flex-direction: column-reverse;
+  }
+  .bookCoverImage,.latitudeImage{
+    width:100%;
+    height:250px;
+  }
+  .latitudeImage{
+    width:100%;
+    height:500px;
+    margin: 10px 0;
+  }
+  .inspirationText{
+    margin-top: 20px;
+  }
+  .tiltEarthImage{
+    width:100%;
+  }
+  .nextImage img{
+    width:60%;
+  }
+
 }

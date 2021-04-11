@@ -5,7 +5,128 @@
 .navbar-container {
     padding: 0;
 }
+.customNavBar {
+    background: #0D1317;
+    height:80px;
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    z-index: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.navbar {
-    background: #2C3E50!important;
+.linksDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.linksDiv a{
+    width:180px;
+    text-align: center;
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease-in-out;
+}
+.linksDiv a:hover{
+    color:black;
+    background-color:white;
+    font-size: 18px;
+}
+a,a:hover{
+    color:white;
+    text-decoration: none;
+}
+.hamburger,.closeNav{
+    width:55px;
+    height:55px;
+    border:2px solid white;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display:none;
+    cursor:pointer;
+}
+.hamburger > div,.closeNav div{
+    width:80%;
+    height:3px;
+    background-color:white;
+}
+.closeNav{
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.closeNav>div{
+}
+.closeNav>div:nth-child(1){
+    transform: translateY(1.5px) rotateZ(45deg);
+}
+.closeNav>div:nth-child(2){
+    transform: translateY(-1.5px) rotateZ(-45deg);
+}
+@media (max-width: 1000px) {
+    .links{
+        position:fixed;
+        top: 0;
+        left:-100%;
+        flex-direction: column;
+        background-color:#0D1317;
+        height: 100vh;
+        transition: all 0.3s ease-in-out;
+        overflow-y: scroll;
+        justify-content: flex-start;
+    }
+    .linksDiv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        flex:1;
+    }
+    .linksDiv a{
+        width:250px;
+    }
+    .hamburger{
+        display:flex;
+        margin-left: 20px;
+    }
+    .customNavBar{
+        justify-content: flex-start;
+    }
+    .closeNav{
+        display:flex;
+        margin: 10px;
+        justify-self: flex-start;
+        align-self: flex-end;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
