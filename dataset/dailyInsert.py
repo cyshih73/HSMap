@@ -5,6 +5,7 @@ import pandas as pd
 import datetime
 import psycopg2
 import csv
+import os
 
 def dailyInsert(verbose, df):
     # get the date
@@ -15,14 +16,17 @@ def dailyInsert(verbose, df):
     day = yesterday.day
     yesterdayDataString = "%d/%d/%d" % (month, day, year)
     yesterdayDataStringLog = "%d_%d_%d" % (month, day, year)
-    
+    #yesterdayDataString = "3/16/21"
+    #yesterdayDataStringLog = "3_16_21"
+
+
     if verbose:
         print(yesterdayDataString)
 
     # open log text file
     logDir = "logFolder/log_%s.txt" % (yesterdayDataStringLog)
     text_file = open(logDir, "wt")
-    executeDateLog = "Execute data : %s\n"  % (x.strftime("%m-%d-%Y"))
+    executeDateLog = "Execute date : %s\n"  % (x.strftime("%m-%d-%Y"))
     text_file.write(executeDateLog)
     dataDateLog = "Data date : %s\n" % (yesterdayDataString)
     text_file.write(dataDateLog)
@@ -36,11 +40,11 @@ def dailyInsert(verbose, df):
     dailyData.to_csv('dailyData.csv', index=False, sep='|')
 
     # insert data to database
-    t_host = "10.134.196.83"
+    t_host = "127.0.0.1"
     t_port = "5432"
     t_dbname = "postgres"
     t_user = "postgres"
-    t_pw = "cyshih"  # TODO : us env
+    t_pw = os.environ['DBpwd']  # TODO : us env
     db_conn = psycopg2.connect(host=t_host, port=t_port, dbname=t_dbname, user=t_user, password=t_pw)
     db_cursor = db_conn.cursor()
 
