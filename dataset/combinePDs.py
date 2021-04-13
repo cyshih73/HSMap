@@ -3,7 +3,9 @@
 
 import pandas as pd
 
-def pd2csv(verbose, dfWorld, dfUS, dfBrazil, dfArgentina):
+def combinePDs(verbose, dfWorld, dfUS, dfBrazil, dfArgentina):
+  if verbose: print("Combine all the data into one dataframe...")
+  
   # Drop Brazil from dfBrazil (we've subsampled Brazil to regions)
   dfBrazil = dfBrazil[dfBrazil.Province_State != "Brazil"]
 
@@ -35,6 +37,5 @@ def pd2csv(verbose, dfWorld, dfUS, dfBrazil, dfArgentina):
   # ```
   dfFinal.drop(dfFinal[((dfFinal.Lat == 0) & (dfFinal.Long == 0)) | ((dfFinal.Lat.isnull()) & (dfFinal.Long.isnull()))].index, inplace = True)
 
-
   if verbose: print(dfFinal)
-  dfFinal.to_csv("dataset_all.csv", index = False)
+  return dfFinal

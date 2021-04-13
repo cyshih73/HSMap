@@ -12,10 +12,12 @@ import pandas as pd
 
 #Create a function to convert date formats:
 def convert_date_format(date_in):
-    #receives yyyy-mm-dd and returns mm/dd/yy
-    #print(type(date_in)) #string
-    date_out = date_in[5:7] + '/' + date_in[8:10] + '/' + date_in[2:4]
-    return date_out
+  #receives yyyy-mm-dd and returns mm/dd/yy
+  #print(type(date_in)) #string
+  month = date_in[5:7] if date_in[5] != '0' else date_in[6]
+  day = date_in[8:10] if date_in[8] != '0' else date_in[9]
+  date_out = month + '/' + day + '/' + date_in[2:4]
+  return date_out
 
 def is_first_date(input, first): # yyy-mm-dd
   if (input == '' or first == ''): return False
