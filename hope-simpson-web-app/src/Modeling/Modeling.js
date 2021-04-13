@@ -7,7 +7,7 @@ function Modeling () {
 	let { path, url } = useRouteMatch();
 
 	return (
-		<div className="modeling-container container">
+		<div className="modeling-container container bodyMarginTop">
 			<div className="modeling-navbar">
 				<ul className="nav nav-tabs">
 					<li className="nav-item">

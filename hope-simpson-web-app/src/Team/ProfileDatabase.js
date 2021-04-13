@@ -1,12 +1,12 @@
-const profiles = [
-  {
-    name: 'Ray Simar',
-    avatar: '/assets/ray-simar.jpeg',
-    title: 'Professor in the Practice',
-    organization: 'Department of ECE at Rice University',
-    roles: ['Project Inspiration', 'Project Advisor', 'Fourier-based Analysis'],
-    link: 'https://profiles.rice.edu/faculty/ray-simar',
-  },
+export const ProfRayInfo={
+  name: 'Ray Simar',
+  avatar: '/assets/ray-simar.jpeg',
+  title: 'Professor in the Practice',
+  organization: 'Department of ECE at Rice University',
+  roles: ['Project Inspiration', 'Project Advisor', 'Fourier-based Analysis'],
+  link: 'https://profiles.rice.edu/faculty/ray-simar',
+}
+export const profiles2020 = [
   {
     name: 'I-No Liao',
     avatar: '/assets/ino-liao.jpeg',
@@ -104,5 +104,70 @@ const profiles = [
     link: '',
   },
 ];
+export const profiles2021 = [
+  {
+    name: 'I-No Liao',
+    avatar: '/assets/ino-liao.jpeg',
+    title: 'Master of Computer Science',
+    organization: 'Rice University',
+    roles: ['Web Dev', 'COVID-19 Data', 'Tableau UI'],
+    link: 'https://inoliao.info/',
+  },
+  {
+    name: 'Ho-Huan Chiang',
+    avatar: '/assets/hohuan-chiang.jpg',
+    title: 'Master of Computer Science',
+    organization: 'Rice University',
+    roles: ['Web Dev', 'Front End Developer'],
+    link: 'https://inoliao.info/',
+  },
+  {
+    name: 'Chih-Che Chung',
+    avatar: '/assets/default_person.png',
+    title: 'Master of Computer Science',
+    organization: 'Rice University',
+    roles: ['TBD'],
+    link: 'https://inoliao.info/',
+  },
+  {
+    name: 'Max Cunningham',
+    avatar: '/assets/default_person.png',
+    title: 'Master of Computer Science',
+    organization: 'Rice University',
+    roles: ['TBD'],
+    link: 'https://inoliao.info/',
+  },
+  {
+    name: 'Chang-Yuan Shih',
+    avatar: '/assets/changyuan-shih.jpg',
+    title: 'Master of Computer Science',
+    organization: 'Rice University',
+    roles: ['Web Dev', 'Google Data Studio UI'],
+    link: 'https://www.csie.ntu.edu.tw/~cyshih',
+  },
+  {
+    name: 'Howard Lan',
+    avatar: '/assets/howard.jpeg',
+    title: 'Master of Computer Science',
+    organization: 'Rice University',
+    roles: ['Web Dev'],
+    link: '',
+  },
+  {
+    name: 'Chiao-Yu Pai',
+    avatar: '/assets/chiaoyu-pai.jpeg',
+    title: '',
+    organization: 'Rice University',
+    roles: ['COVID-19 Data', 'VM Administration'],
+    link: '',
+  },
+  {
+    name: 'Yu-Che Cheng',
+    avatar: '/assets/yuche-cheng.png',
+    title: '',
+    organization: 'Rice University',
+    roles: ['Fourier-based Analysis', 'Web Dev', 'Tableau UI'],
+    link: '',
+  }
+];
 
-export default profiles;
