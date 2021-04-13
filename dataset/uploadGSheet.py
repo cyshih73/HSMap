@@ -8,6 +8,7 @@ def uploadGSheet(verbose, df):
   if verbose: print("Upload the dataframe onto google sheet")
 
   # Get the credential with given json-file
+  # hsmap-credential.json is not on the github repo. Contact author for access
   GCloud = pygsheets.authorize(service_file="hsmap-credential.json")
 
   # Open the Google sheet file
