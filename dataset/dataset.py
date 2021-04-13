@@ -9,13 +9,15 @@ from convertWorld import convertWorld
 from convertUS import convertUS
 from convertBrazil import convertBrazil
 from convertArgentina import convertArgentina
-from pd2csv import pd2csv
+from combinePDs import combinePDs
+from normalizePD import normalizePD
 from dailyInsert import dailyInsert
+from uploadGSheet import uploadGSheet
 
-urls = [  ("World", "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"),
-          ("US", "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv"), 
-          ("Brazil", "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"), 
-          ("Argentina", "https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19Casos.csv")]
+urls = [  ("World",       "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"),
+          ("US",          "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv"), 
+          ("Brazil",      "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"), 
+          ("Argentina",   "https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19Casos.csv")]
 
 def downloadFiles(verbose, todo):
   if verbose: print('Downloading dataset...')
@@ -23,8 +25,17 @@ def downloadFiles(verbose, todo):
   for idx, url in enumerate(urls):
     if pow(2, idx) & todo == 0: continue
     if verbose: print("%s..." % url[0])
-    urllib.request.urlretrieve(url[1], "./dataset_%s.csv" % url[0])
-
+    count = 0
+    while True:
+      try:
+        urllib.request.urlretrieve(url[1], "./dataset_%s.csv" % url[0])
+        break
+      except: 
+        print("Download %s data failed. Try again now..." % url[0])
+        count += 1
+        if count > 5: break
+        pass
+    
   if verbose: print("Done.")
 
 
@@ -59,7 +70,11 @@ def main(args):
 
   if args.all:
     print("Converting all the dataframes to one csv...")
-    dfAll = pd2csv(args.verbose, dfWorld, dfUS, dfBrazil, dfArgentina)
+    dfAll = normalizePD(args.verbose, combinePDs(args.verbose, dfWorld, dfUS, dfBrazil, dfArgentina))
+    dfAll.to_csv("dataset_all.csv", index = False)    # Save PD to CSV
+    uploadGSheet(args.verbose, dfAll)
+  
+  if args.insert:
     dailyInsert(args.verbose, dfAll)
   
   print("Done!")
@@ -68,9 +83,10 @@ def main(args):
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Python dataset downloader for Hope-Simpson Map\n", formatter_class=argparse.RawTextHelpFormatter)
   parser.add_argument("-v", "--verbose", action="store_true")
-  parser.add_argument("-d", "--download", action="store_true")
+  parser.add_argument("-d", "--download", action="store_true", help="Download the dataset")
+  parser.add_argument("-i", "--insert", action="store_true", help="Insert the data into database or not")
+  
   parser.add_argument("-a", "--all", action="store_true")
-
   parser.add_argument("--world", action="store_true")
   parser.add_argument("--us", action="store_true")
   parser.add_argument("--brazil", action="store_true")
