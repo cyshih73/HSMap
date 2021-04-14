@@ -1,12 +1,22 @@
 *{
     font-family: sans-serif;
 }
+.homebody{
+    overflow: hidden;
+}
+.displayFlex{
+    display:flex;
+}
+.displayCenter{
+    align-items: center;
+    justify-content: center;
+}
 .mainTitle{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
 }
 .subTitle{
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
 }
 .homeTitles{
@@ -21,7 +31,7 @@
 }
 .homeCards  .cards{
     flex:1;
-    flex-basis: 300px;
+    flex-basis: 250px;
     margin: 10px;
     text-align: center;
     border: 2px solid white;
@@ -67,8 +77,6 @@
 */
 
 .homeCards  .cards:hover{
-    transform: scale(1.2);
-    z-index: 2;
 }
 .homeCards  .cards:nth-child(1):hover:after{
     background-color: #143642;
@@ -106,7 +114,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height:400px;
+    min-height:300px;
     margin: 20px 0;
     padding: 10px;
 }
@@ -114,9 +122,9 @@
     width:80%;
 }
 #section1 .title{
-    font-size: 35px;
+    font-size: 28px;
     text-decoration: underline;
-    margin-bottom: 5px;
+    margin: 5px 0px;
 }
 .homeTableau{
     padding: 10px;
@@ -153,7 +161,7 @@
     margin: 20px 0;
 }
 #section2 > div{
-    width:80%;
+    width:90%;
     margin: 0 auto;
     padding: 50px;
 }
@@ -166,6 +174,5 @@
     border-radius: 15px;
 }
 #section3 .title{
-    font-size: 35px;
     text-decoration: underline;
 }

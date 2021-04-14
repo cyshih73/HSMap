@@ -33,7 +33,7 @@ class Modeling extends Component{
 		return(
 
 			<div className={"bodyMarginTop"}>
-				<div className={"modelNav"}>
+				<div className={"customTab"}>
 					{
 						this.tabs.map((eachTab,index)=>{
 							return (
