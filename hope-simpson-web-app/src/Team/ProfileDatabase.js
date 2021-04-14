@@ -119,7 +119,7 @@ export const profiles2021 = [
     title: 'Master of Computer Science',
     organization: 'Rice University',
     roles: ['Web Dev', 'Front End Developer'],
-    link: 'https://inoliao.info/',
+    link: '',
   },
   {
     name: 'Chih-Che Chung',
@@ -127,15 +127,15 @@ export const profiles2021 = [
     title: 'Master of Computer Science',
     organization: 'Rice University',
     roles: ['TBD'],
-    link: 'https://inoliao.info/',
+    link: '',
   },
   {
     name: 'Max Cunningham',
-    avatar: '/assets/default_person.png',
-    title: 'Master of Computer Science',
+    avatar: '/assets/max_cunningham.jpg',
+    title: 'Rice University',
     organization: 'Rice University',
     roles: ['TBD'],
-    link: 'https://inoliao.info/',
+    link: '',
   },
   {
     name: 'Chang-Yuan Shih',
