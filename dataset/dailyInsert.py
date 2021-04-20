@@ -48,15 +48,22 @@ def dailyInsert(verbose, df):
     db_conn = psycopg2.connect(host=t_host, port=t_port, dbname=t_dbname, user=t_user, password=t_pw)
     db_cursor = db_conn.cursor()
 
-    try:
-        f_contents = open("dailyData.csv", 'r')
-        next(f_contents) # Skip the header row
-        db_cursor.copy_from(f_contents, '"hope_simpson"."ConfirmCase"', columns=('"Province_State"', '"Country_Region"',  '"Lat"', '"Long"', '"Date"', '"Confirmed_Cases"'), sep="|")
-        db_conn.commit()
-    except psycopg2.Error as e:
-        errorLog = "Error : %s\n" % (e)
-        text_file.write(errorLog)
-        print(e)
+    count = 0
+    while True:
+        try:
+            f_contents = open("dailyData.csv", 'r')
+            next(f_contents) # Skip the header row
+            db_cursor.copy_from(f_contents, '"hope_simpson"."ConfirmCase"', columns=('"Province_State"', '"Country_Region"',  '"Lat"', '"Long"', '"Date"', '"Confirmed_Cases"'), sep="|")
+            db_conn.commit()
+            break
+        except psycopg2.Error as e:
+            errorLog = "Error : %s\n" % (e)
+            text_file.write(errorLog)
+            errorLog = "Upload failed %d times. Try again now..." % count
+            text_file.write(errorLog)
+            count += 1
+            if count > 5 : break
+            pass
 
     
     print("close connect")
