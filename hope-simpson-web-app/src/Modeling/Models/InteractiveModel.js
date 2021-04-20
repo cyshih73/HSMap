@@ -13,7 +13,8 @@ class InteractiveModel extends Component {
 			beta: 0.05,
 			alpha: 0.03,
 			ro: 0.05,
-			etha: 0.03
+			etha: 0.03,
+			radioOverTimeWidth:0
 		};
 	}
 
@@ -36,9 +37,15 @@ class InteractiveModel extends Component {
 	handleChangeEtha = event => {
 		this.setState({ etha: event.target.value });
 	};
-
+	handleChangeWindowSize=(e)=>{
+		let radioOverTime=document.getElementById("ratioOverTime");
+		this.setState({...this.state,radioOverTimeWidth:radioOverTime.clientWidth});
+	}
 	componentDidMount() {
 		this.displayChart();
+		let radioOverTime=document.getElementById("ratioOverTime");
+		window.addEventListener("resize",this.handleChangeWindowSize.bind(this));
+		this.setState({...this.state,radioOverTimeWidth:radioOverTime.clientWidth});
 	}
 
 	componentDidUpdate() {
@@ -111,7 +118,7 @@ class InteractiveModel extends Component {
 		d3.select("svg").remove();
 
 		//Define general dimension parameters
-		var outerWidth = 800;
+		var outerWidth = this.state.radioOverTimeWidth;
 		var outerHeight = 450;
 		var margin = { left: 70, top: 25, right: 25, bottom: 60 };
 		var innerWidth  = outerWidth  - margin.left - margin.right;
@@ -122,7 +129,6 @@ class InteractiveModel extends Component {
 		// var xAxisLabelOffset = 48;
 		// var yAxisLabelText = "Temperature °C";
 		// var yAxisLabelOffset = 40;
-
 		//Append svg element to the page
 		const svg = d3.select(this.myChart.current).append("svg")
 			.attr("width",  outerWidth)
@@ -134,20 +140,8 @@ class InteractiveModel extends Component {
 		var xAxisG = g.append("g")
 			.attr("class", "x axis")
 			.attr("transform", "translate(0, " + innerHeight + ")");
-		/*var xAxisLabel = xAxisG.append("text")
-        .style("text-anchor", "middle")
-              .attr("transform",
-        "translate(" + (innerWidth / 2) + "," + xAxisLabelOffset + ")")
-              .attr("class", "label")
-              .text(xAxisLabelText);*/
 		var yAxisG = g.append("g")
 			.attr("class", "y axis");
-		/*var yAxisLabel = yAxisG.append("text")
-              .style("text-anchor", "middle")
-              .attr("transform",
-        "translate(-" + yAxisLabelOffset + "," + (innerHeight / 2) + ") rotate(-90)")
-              .attr("class", "label")
-              .text(yAxisLabelText);*/
 		var path = g.append("path")
 			.attr("class", "chart-line");
 
@@ -201,16 +195,9 @@ class InteractiveModel extends Component {
 
 	render() {
 		return (
-			<div>
-				<div>
-					<h3>Ratio of Infected People Over Time</h3>
-				</div>
-
-				<div ref={this.myChart}/>
-
+			<div className={"interactiveDiv"}>
 				<div id="parameters-outer-box">
-					<h4>Control the model parameters below:</h4>
-
+					<h4 className={"title"}>Control The Model Parameters</h4>
 					<div id="parameters-control-box">
 						<React.Fragment>
 							<form>
@@ -236,7 +223,7 @@ class InteractiveModel extends Component {
 									onChange={this.handleChangeBeta}
 								/>
 								<label htmlFor="beta">Beta: {this.state.beta}</label>
-
+								<br/>
 								<input
 									type="range"
 									id="alpha"
@@ -249,7 +236,7 @@ class InteractiveModel extends Component {
 									onChange={this.handleChangeAlpha}
 								/>
 								<label htmlFor="alpha">Alpha: {this.state.alpha}</label>
-
+								<br/>
 								<input
 									type="range"
 									id="ro"
@@ -262,7 +249,7 @@ class InteractiveModel extends Component {
 									onChange={this.handleChangeRo}
 								/>
 								<label htmlFor="ro">Rho: {this.state.ro}</label>
-
+								<br/>
 								<input
 									type="range"
 									id="etha"
@@ -280,8 +267,17 @@ class InteractiveModel extends Component {
 						</React.Fragment>
 					</div>
 					<div id="parameters-control-image">
-						<img width="500px" src={ SEIR_IMAGE_PATH } alt="" className="img-SEIR-model"/>
+						<img src={ SEIR_IMAGE_PATH } alt="" className="img-SEIR-model"/>
 					</div>
+				</div>
+				<div className={"arrowDiv"}>
+				</div>
+				<div className={"ratioOverTime"} id={"ratioOverTime"}>
+					<div>
+						<h3 className={"title"}>Ratio of Infected People Over Time</h3>
+					</div>
+
+					<div ref={this.myChart} className={"radioOverTimeChart"}/>
 				</div>
 			</div>
 		);

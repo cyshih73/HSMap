@@ -5,6 +5,7 @@ import {profiles2020,profiles2021,ProfRayInfo} from "./ProfileDatabase";
 import Profile2 from "./Profile2";
 import {TweenLite,gsap,Power3,Linear} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {createRandomNumber} from "../ Repository/RepositoryFunction";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,9 +105,7 @@ function Team() {
           }
       })
       for(var i=0;i<year2021Name.length;i++){
-          var randomX=(Math.floor(Math.random() * 2)==0?1:-1)*(Math.floor(Math.random() * 50)+80);
-          var randomY=(Math.floor(Math.random() * 2)==0?1:-1)*(Math.floor(Math.random() * 50)+80);
-          year2021TimeLine.from("#year2021Name"+i,{opacity: 0,x:randomX,y: randomY,duration: 1, ease: Power3.easeIn});
+          year2021TimeLine.from("#year2021Name"+i,{opacity: 0,x:createRandomNumber(50,80,true),y: createRandomNumber(50,80,true),duration: 1, ease: Power3.easeIn});
       }
       var rayDivNameTimeLine= gsap.timeline({
           scrollTrigger:{
@@ -117,9 +116,7 @@ function Team() {
           }
       })
       for(var i=0;i<rayDivName.length;i++){
-          var randomX=(Math.floor(Math.random() * 2)==0?1:-1)*(Math.floor(Math.random() * 50)+80);
-          var randomY=(Math.floor(Math.random() * 2)==0?1:-1)*(Math.floor(Math.random() * 50)+80);
-          rayDivNameTimeLine.from("#rayDivName"+i,{opacity: 0,x:randomX,y: randomY,duration: 1, ease: Power3.easeIn});
+          rayDivNameTimeLine.from("#rayDivName"+i,{opacity: 0,x:createRandomNumber(50,80,true),y: createRandomNumber(50,80,true),duration: 1, ease: Power3.easeIn});
       }
       var year2020TimeLine= gsap.timeline({
           scrollTrigger:{
@@ -130,9 +127,7 @@ function Team() {
           }
       })
       for(var i=0;i<year2020Name.length;i++){
-          var randomX=(Math.floor(Math.random() * 2)==0?1:-1)*(Math.floor(Math.random() * 50)+80);
-          var randomY=(Math.floor(Math.random() * 2)==0?1:-1)*(Math.floor(Math.random() * 50)+80);
-          year2020TimeLine.from("#year2020Name"+i,{opacity: 0,x:randomX,y: randomY,duration: 1, ease: Power3.easeIn});
+          year2020TimeLine.from("#year2020Name"+i,{opacity: 0,x:createRandomNumber(50,80,true),y: createRandomNumber(50,80,true),duration: 1, ease: Power3.easeIn});
       }
 
       gsap.from('.lineFrom2021To2020',{height: 0,duration:1,ease: "linear",scrollTrigger:{
