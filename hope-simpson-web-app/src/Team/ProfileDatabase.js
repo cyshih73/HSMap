@@ -123,10 +123,10 @@ export const profiles2021 = [
   },
   {
     name: 'Chih-Che Chung',
-    avatar: '/assets/default_person.png',
+    avatar: '/assets/chihche-chung.jpg',
     title: 'Master of Computer Science',
     organization: 'Rice University',
-    roles: ['TBD'],
+    roles: ['Pandemic to Endemic','Web Dev'],
     link: '',
   },
   {
