@@ -177,27 +177,51 @@ function Home() {
     resize();
 
     const ShowTitle=()=>{
-
+        var count=0;
         return (
             <div className={"homeTitles"}>
-                <div className="text-center mainTitle displayFlex displayCenter">
+                <div className="text-center mainTitle displayFlex displayCenter displayWrap">
                     {
-                        mainTitle.split('').map((eachChar,index)=>{
-                            return <div key={index} id={`mainTitle${index}`}>{eachChar.replace(/ /g, "\u00a0")}</div>
+                        mainTitle.split(' ').map((eachWord,index)=>{
+                            return (
+                                <div className="displayFlex">
+                                    {
+                                        eachWord.split('').map((eachChar,index)=> {
+                                            return <div key={count} id={`mainTitle${count++}`}>{eachChar.replace(/ /g, "\u00a0")}</div>
+                                        })
+                                    }
+                                    &nbsp;
+                                </div>
+                            )
+
                         })
                     }
                 </div>
-                <div className="text-center subTitle displayFlex displayCenter">
-                    {
-                        mainSubTitle.split('').map((eachChar,index)=>{
-                            return <span key={index} id={`subTitle${index}`}>{eachChar.replace(/ /g, "\u00a0")}</span>
-                        })
-                    }
-                </div>
+                {showSubTitle()}
             </div>
         )
     }
-
+    const showSubTitle=()=>{
+        var count=0;
+        return (
+            <div className="text-center subTitle displayFlex displayCenter displayWrap">
+                {
+                    mainSubTitle.split(' ').map((eachWord,index)=>{
+                        return (
+                            <div className="displayFlex">
+                                {
+                                    eachWord.split('').map((eachChar,index)=> {
+                                        return <span key={count} id={`subTitle${count++}`}>{eachChar.replace(/ /g, "\u00a0")}</span>
+                                    })
+                                }
+                                &nbsp;
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        )
+    }
     const Introduction=()=>{
         return (
             <div id={"section1"}>
