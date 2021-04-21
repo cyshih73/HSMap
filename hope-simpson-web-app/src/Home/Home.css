@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: center;
 }
+.displayWrap{
+    flex-wrap: wrap;
+}
 .mainTitle{
     font-size: 36px;
     font-weight: bold;
