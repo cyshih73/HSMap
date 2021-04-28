@@ -1,5 +1,10 @@
 const dashboards = [
   {
+    name: 'Explore page',
+    url: 'explore',
+    tableauUrl: 'https://public.tableau.com/views/hs-world-map-all_16195807534620/Dashboard-WorldMapAll?:language=en&:display_count=y&publish=yes&:origin=viz_share_link'
+  },
+  {
     name: 'Four Latitude Zones',
     url: 'fourlatitudezones',
     tableauUrl: 'https://public.tableau.com/views/hs-four-latitude-zones_16181749362570/Dashboard-FourLatitudeZones?:language=en&:display_count=y&:origin=viz_share_link'

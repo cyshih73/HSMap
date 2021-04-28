@@ -18,7 +18,7 @@ code {
 
 
 
-.customTab{
+.customTab,.customTab2{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -34,17 +34,34 @@ code {
   min-width:300px;
   text-align: center;
 }
+.customTab2>div{
+  margin: 10px 10px 0px 10px;
+  padding: 8px;
+  border: 3px solid #06316d;
+  border-bottom: none;
+  min-width: 200px;
+  cursor:pointer;
+}
 
 
 .tabPressed{
   background-color:#0D2149;
   color:white
 }
-.tabUnPressed{
+.tabUnPressed,.tabUnPressed2{
   background-color:transparent;
   color:black;
+  transition: all 0.2s ease-in-out;
+}
+.tabPressed2{
+  background-color:#06316d;
+  color:white;
+}
+.tabUnPressed2:hover{
+  letter-spacing: 2px;
 }
 
+/*
 .tabUnPressed:before,.tabUnPressed:after{
   content: '';
   position: absolute;
@@ -69,6 +86,25 @@ code {
 .tabUnPressed:hover{
   color:white;
   animation: tabBreathingAnimateText 1s ease-in-out infinite;
+}
+*/
+
+.tabUnPressed:before{
+  content: '';
+  position: absolute;
+  width:0%;
+  height:100%;
+  left:0;
+  top:0;
+  background-color:#0D2149;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+.tabUnPressed:hover:before{
+  width:100%;
+}
+.tabUnPressed:hover {
+  color: white;
 }
 @media only screen and (max-width: 1000px) {
   .customTab{
