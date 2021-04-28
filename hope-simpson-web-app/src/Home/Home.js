@@ -249,7 +249,7 @@ function Home() {
         return (
             <div className={"homeTableau"}>
                 <div style={{paddingBottom:allValues.smallScreen?"75%":"45%"}}>
-                    <iframe scrolling="no" src={allValues.iframeURL}></iframe>
+                    <iframe scrolling="no" frameBorder="0" src={allValues.iframeURL}></iframe>
                 </div>
             </div>
         )
@@ -281,27 +281,27 @@ function Home() {
                     scrub: true,
                 }});
             gsap.from('#section2 .aboutCard',{opacity: 0,x: -100,duration:1,ease: "linear",scrollTrigger:{
-                    trigger:'.homeCards',
+                    trigger:'#section2 .aboutCard',
                     start: "top 70%",
-                    end: "bottom bottom",
+                    end: "50% bottom",
                     scrub: true
                 }});
             gsap.from('#section2 .tableauCard',{opacity: 0,y: -100,duration:1,ease: "linear",scrollTrigger:{
-                    trigger:'.homeCards',
+                    trigger:'#section2 .tableauCard',
                     start: "top 70%",
-                    end: "bottom bottom",
+                    end: "50% bottom",
                     scrub: true
                 }});
             gsap.from('#section2 .mapCard',{opacity: 0,y: 100,duration:1,ease: "linear",scrollTrigger:{
-                    trigger:'.homeCards',
+                    trigger:'#section2 .mapCard',
                     start: "top 70%",
-                    end: "bottom bottom",
+                    end: "50% bottom",
                     scrub: true
                 }});
             gsap.from('#section2 .modelingCard',{opacity: 0,x: 100,duration:1,ease: "linear",scrollTrigger:{
-                    trigger:'.homeCards',
+                    trigger:'#section2 .modelingCard',
                     start: "top 70%",
-                    end: "bottom bottom",
+                    end: "50% bottom",
                     scrub: true
                 }});
         })
