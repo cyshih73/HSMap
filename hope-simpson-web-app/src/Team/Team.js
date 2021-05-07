@@ -22,7 +22,7 @@ function Team() {
     const profile2021List = [...profiles2021];
     const rayDivName="Project Manager";
     const year2021Name="Members in 2021 Spring";
-    const year2020Name="Members in 2020 Spring";
+    const year2020Name="Members in 2020 Fall ";
     const ProfRay=()=>{
         return (
             <div className={"rayDiv"}>
