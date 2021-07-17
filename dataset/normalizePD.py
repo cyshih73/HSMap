@@ -14,7 +14,7 @@ def normalizePD(verbose, df):
   result = result.rename(columns={"Confirmed Cases_x": "Confirmed Cases","Confirmed Cases_y" : "Confirmed_Sum"})
 
   # Get the Ratio
-  result['Cases_Ratio'] = result['Confirmed Cases'] / result['Confirmed_Sum'] * 10000
+  result['Cases_Ratio'] = result['Confirmed Cases'] / result['Confirmed_Sum'] * 100
   if verbose: print(result)
   
   return result

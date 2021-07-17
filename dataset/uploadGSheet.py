@@ -22,7 +22,7 @@ def uploadGSheet(verbose, df):
   count = 0
   while True:
     try:
-      worksheet.set_dataframe(df, start = 'A1', copy_index=False, copy_head=True, fit=True, escape_formulae=False,nan = 0)
+      worksheet.set_dataframe(df, start = 'A1', copy_index=False, copy_head=True, fit=True, escape_formulae=False, nan = 0)
       break
     except: 
       print("Upload failed %d times. Try again now..." % count)
