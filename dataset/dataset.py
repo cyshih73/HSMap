@@ -17,7 +17,7 @@ from uploadGSheet import uploadGSheet
 urls = [  ("World",       "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"),
           ("US",          "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv"), 
           ("Brazil",      "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"), 
-          ("Argentina",   "https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19Casos.csv")]
+          ("Argentina",   "https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19Casos.zip")]
 
 def downloadFiles(verbose, todo):
   if verbose: print('Downloading dataset...')
@@ -28,13 +28,20 @@ def downloadFiles(verbose, todo):
     count = 0
     while True:
       try:
-        urllib.request.urlretrieve(url[1], "./dataset_%s.csv" % url[0])
+        if url[0] != "Argentina": urllib.request.urlretrieve(url[1], "./dataset_%s.csv" % url[0])
+        else: urllib.request.urlretrieve(url[1], "./dataset_%s.zip" % url[0])
         break
       except: 
         print("Download %s data failed. Try again now..." % url[0])
         count += 1
         if count > 5: break
         pass
+        
+  import zipfile, os
+  with zipfile.ZipFile("./dataset_Argentina.zip", 'r') as zip_ref:
+    if verbose: print("Extracting Argentina zip...")
+    zip_ref.extractall("./")
+    os.rename("./Covid19Casos.csv", "./dataset_Argentina.csv")
     
   if verbose: print("Done.")
 
