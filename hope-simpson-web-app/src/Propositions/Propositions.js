@@ -10,7 +10,7 @@ const Propositions = () => {
 
   return (
     <div className={'bodyMarginTop'}>
-      <div className={'customTab3'}>
+      <div className={'customTab'}>
         {
           propositions.map((data, idx) => {
             return <div key={idx} className={(idx == currentView) ? 'tabPressed' : 'tabUnPressed'} onClick={() => {
@@ -30,7 +30,7 @@ const Propositions = () => {
                 title={proposition.title}
                 description={proposition.description}
                 images={proposition.images}
-                key={idx}/>
+                key={idx} />
               : <span></span>;
           })
         }
