@@ -18,7 +18,7 @@ code {
 
 
 
-.customTab,.customTab2{
+.customTab,.customTab2,.customTab3{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,18 @@ code {
   border-bottom: none;
   min-width: 200px;
   cursor:pointer;
+}
+
+.customTab3>div{
+  padding: 10px;
+  border-bottom: 2px solid #0D2149;
+  border-top: 2px solid #0D2149;
+  margin: 10px;
+  transition: all 0.3s ease;
+  position:relative;
+  cursor:pointer;
+  min-width:200px;
+  text-align: center;
 }
 
 

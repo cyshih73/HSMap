@@ -1,6 +1,6 @@
 import React, {Component, useState} from "react";
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Navbar extends Component{
@@ -31,6 +31,7 @@ class Navbar extends Component{
                         <a href={"/map/tableau"}><div>Tableau Map</div></a>
                         <a href={"/map/gds"}><div>GDS Map</div></a>
                         <a href={"/modeling"}><div>Modeling</div></a>
+                        <a href={"/propositions"}><div>Propositions</div></a>
                         <a href={"/team"}><div>Team</div></a>
                     </div>
                 </div>

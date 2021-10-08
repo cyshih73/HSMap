@@ -7,6 +7,7 @@ import MapTableau from "../MapTableau/MapTableau";
 import MapGDS from "../MapGDS/MapGDS";
 import Modeling from "../Modeling/Modeling";
 import Team from "../Team/Team";
+import Propositions from '../Propositions/Propositions';
 
 function SiteRouter() {
   return (
@@ -24,6 +25,9 @@ function SiteRouter() {
         </Route>
         <Route path="/modeling">
           <Modeling />
+        </Route>
+        <Route path="/propositions">
+          <Propositions />
         </Route>
         <Route exact path="/team">
           <Team />
