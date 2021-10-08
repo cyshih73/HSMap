@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import propositions from './propositionsDatabse'
-import dashboards from '../MapTableau/DashboardDatabase';
-import TableauDashboard from '../TableauDashboard/TableauDashboard';
 import Proposition from './Proposition';
 
 const Propositions = () => {
@@ -20,6 +18,9 @@ const Propositions = () => {
             }}><span>{data.title}</span></div>
           })
         }
+      </div>
+      <div className={'topLine'}>
+        <hr />
       </div>
       <div>
         {
