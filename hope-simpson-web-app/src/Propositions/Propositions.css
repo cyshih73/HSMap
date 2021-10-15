@@ -1,9 +1,22 @@
 .propositionDiv {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-count: 3;
 }
 
 .topLine {
   width: 80%;
   margin: 0 auto;
+}
+
+.image-subtitles {
+  text-align: center;
+}
+
+.img-fluid {
+  width: fit-content;
+  height: fit-content;
 }
