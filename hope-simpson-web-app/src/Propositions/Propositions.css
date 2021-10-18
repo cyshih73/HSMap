@@ -7,6 +7,15 @@
   column-count: 3;
 }
 
+.propositionDesc {
+  text-align: center;
+}
+
+.propositionExplain {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .topLine {
   width: 80%;
   margin: 0 auto;

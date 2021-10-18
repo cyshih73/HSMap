@@ -29,6 +29,7 @@ const Propositions = () => {
               ? <Proposition
                 title={proposition.title}
                 description={proposition.description}
+                explanations={proposition.explanations}
                 images={proposition.images}
                 key={idx} />
               : <span></span>;
