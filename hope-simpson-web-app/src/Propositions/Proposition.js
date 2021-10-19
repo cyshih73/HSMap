@@ -5,7 +5,7 @@ const Proposition = (props) => {
   const { title, description, explanations, images, subtitles } = props;
   return (
     <div>
-      <h3 className={'propositionDesc'}>{description}</h3>
+      <h3 className={'propositionDesc'}>{title + ': ' + description}</h3>
       <div className={'propositionExplain'}>
         {explanations.map((explanation, eidx) => {
           return (
