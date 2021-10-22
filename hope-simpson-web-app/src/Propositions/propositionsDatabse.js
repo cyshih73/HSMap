@@ -10,14 +10,14 @@ const propositions = [
     ],
     images: [
       { title: 'Italy - Lat: 41.9, Long: 12.6', src: './captures/prop1/Italy.png' },
-      { title: 'United Kingdom - Lat: 55.4, Long: -3.4', src: './captures/prop1/United Kingdom.png' },
+      { title: 'Egypt - Lat: 26.8, Long: 30.8', src: './captures/prop1/Egypt.png' },
       { title: 'Germany - Lat: 51.2, Long: 10.5', src: './captures/prop1/Germany.png' },
-      { title: 'Japan - Lat: 36.2, Long: 138.3', src: './captures/prop1/Japan.png' },
+      { title: 'South Africa - Lat: -30.6, Long: 22.9', src: './captures/prop1/South Africa.png' },
       { title: 'France - Lat: 46.2, Long: 2.2', src: './captures/prop1/France.png' },
       { title: 'Russia - Lat: 61.5, Long: 105.3', src: './captures/prop1/Russia.png' },
       { title: 'New York - Lat: 43.0, Long: -75.0', src: './captures/prop1/New York.png' },
       { title: 'Texas - Lat: 31.0, Long: -100.0', src: './captures/prop1/Texas.png' },
-      { title: 'California - Lat: 36.8, Long: -119.4', src: './captures/prop1/California.png' }
+      { title: 'Florida - Lat: 28.0, Long: -81.8', src: './captures/prop1/Florida.png' }
     ],
   },
   {
