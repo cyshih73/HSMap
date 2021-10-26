@@ -30,15 +30,15 @@ const propositions = [
       }
     ],
     images: [
-      { title: 'Italy - Lat: 41.9, Long: 12.6', src: './captures/prop1/Italy.png' },
-      { title: 'United Kingdom - Lat: 55.4, Long: -3.4', src: './captures/prop1/United Kingdom.png' },
-      { title: 'Germany - Lat: 51.2, Long: 10.5', src: './captures/prop1/Germany.png' },
-      { title: 'Japan - Lat: 36.2, Long: 138.3', src: './captures/prop1/Japan.png' },
-      { title: 'France - Lat: 46.2, Long: 2.2', src: './captures/prop1/France.png' },
-      { title: 'Russia - Lat: 61.5, Long: 105.3', src: './captures/prop1/Russia.png' },
-      { title: 'New York - Lat: 43.0, Long: -75.0', src: './captures/prop1/New York.png' },
-      { title: 'Texas - Lat: 31.0, Long: -100.0', src: './captures/prop1/Texas.png' },
-      { title: 'California - Lat: 36.8, Long: -119.4', src: './captures/prop1/California.png' }
+      { title: 'Algeria - Lat: 28, Long: 1.7', src: './captures/prop2/Algeria.png' },
+      { title: 'New York - Lat: 43.0, Long: -75.0', src: './captures/prop2/NewYork.png' },
+      { title: 'Saudi Arabia - Lat: 23.9, Long: 45.1', src: './captures/prop2/SaudiArabia.png' },
+      { title: 'South Africa - Lat: -30.6, Long: 22.9', src: './captures/prop2/SouthAfrica.png' },
+      { title: 'Spain - Lat: 40.5, Long: -3.7', src: './captures/prop2/Spain.png' },
+      { title: 'Turkey - Lat: 39.0, Long: 35.2', src: './captures/prop2/Turkey.png' },
+      { title: 'Victoria - Lat: -37.8, Long: 145.0', src: './captures/prop2/Victoria.png' },
+      { title: 'Yemen - Lat: 15.6, Long: 48.5', src: './captures/prop2/Yemen.png' },
+      { title: 'India - Lat: 20.6, Long: 79.0', src: './captures/prop2/India.png' }
     ],
   },
   {
