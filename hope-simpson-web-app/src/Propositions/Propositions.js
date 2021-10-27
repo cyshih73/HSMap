@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import propositions from './propositionsDatabse'
+import propositions from './database/propositionsDatabse'
 import Proposition from './Proposition';
 
 const Propositions = () => {
@@ -32,7 +32,7 @@ const Propositions = () => {
                 explanations={proposition.explanations}
                 images={proposition.images}
                 key={idx} />
-              : <span></span>;
+              : <span key={idx}></span>;
           })
         }
       </div>

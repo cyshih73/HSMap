@@ -9,12 +9,12 @@ const Proposition = (props) => {
       <div className={'propositionExplain'}>
         {explanations.map((explanation, eidx) => {
           return (
-            <div>
-              <span className={'prop-exp'} key={eidx}>{'- ' + explanation.key}</span>
+            <div key={eidx}>
+              <span className={'prop-exp'}>{'- ' + explanation.key}</span>
               <ul>
-                {explanation.sup.map((support, sidx) => {
+                {explanation.sup.map((support) => {
                   return (
-                    <li key={sidx}>{support}</li>
+                    <li>{support}</li>
                   )
                 })}
               </ul>
@@ -38,13 +38,13 @@ const Proposition = (props) => {
             //     <img className={'img-fluid'} key={idx} src={require('' + image.src)} />
             //   </div>
             // </div>
-            <figure className="position-relative">
-              <figcaption className={'image-subtitles'} key={idx}>{image.title}</figcaption>
-              <img className={'img-thumbnail'} key={idx} src={require('' + image.src)} />
+            <figure className="position-relative" key={idx}>
+              <figcaption className={'image-subtitles'}>{image.title}</figcaption>
+              <img className={'img-thumbnail'} src={require('./database' + image.src)}/>
             </figure>
           )
         })}
-      </div >
+      </div>
     </div>
   )
 }
