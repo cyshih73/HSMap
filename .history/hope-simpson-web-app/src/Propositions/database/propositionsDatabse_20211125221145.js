@@ -186,12 +186,12 @@ const propositions = [
         src: "/captures/prop4/Harris.png",
       },
       {
-        title: "Oregon - Lat: 31.0, Long: -100.0",
-        src: "/captures/prop4/Oregon.png",
+        title: "Texas - Lat: 31.0, Long: -100.0",
+        src: "/captures/prop1/Texas.png",
       },
       {
-        title: "Italy - Lat: 41.9, Long: 12.6",
-        src: "/captures/prop4/Italy.png",
+        title: "California - Lat: 36.8, Long: -119.4",
+        src: "/captures/prop1/California.png",
       },
     ],
   },

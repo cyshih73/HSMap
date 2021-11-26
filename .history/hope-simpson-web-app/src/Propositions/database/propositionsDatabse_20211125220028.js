@@ -178,20 +178,20 @@ const propositions = [
         src: "/captures/prop4/NC.png",
       },
       {
-        title: "South Carolina - Lat: 33.8361, Long: 81.1637",
-        src: "/captures/prop4/SC.png",
+        title: "Russia - Lat: 61.5, Long: 105.3",
+        src: "/captures/prop1/Russia.png",
       },
       {
-        title: "Harris - Lat: 29.758938, Long: -95.367697",
-        src: "/captures/prop4/Harris.png",
+        title: "New York - Lat: 43.0, Long: -75.0",
+        src: "/captures/prop1/New York.png",
       },
       {
-        title: "Oregon - Lat: 31.0, Long: -100.0",
-        src: "/captures/prop4/Oregon.png",
+        title: "Texas - Lat: 31.0, Long: -100.0",
+        src: "/captures/prop1/Texas.png",
       },
       {
-        title: "Italy - Lat: 41.9, Long: 12.6",
-        src: "/captures/prop4/Italy.png",
+        title: "California - Lat: 36.8, Long: -119.4",
+        src: "/captures/prop1/California.png",
       },
     ],
   },
