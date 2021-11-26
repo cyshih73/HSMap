@@ -51,15 +51,15 @@ const propositions = [
       }
     ],
     images: [
-      { title: 'Italy - Lat: 41.9, Long: 12.6', src: '/captures/prop1/Italy.png' },
-      { title: 'United Kingdom - Lat: 55.4, Long: -3.4', src: '/captures/prop1/United Kingdom.png' },
-      { title: 'Germany - Lat: 51.2, Long: 10.5', src: '/captures/prop1/Germany.png' },
-      { title: 'Japan - Lat: 36.2, Long: 138.3', src: '/captures/prop1/Japan.png' },
-      { title: 'France - Lat: 46.2, Long: 2.2', src: '/captures/prop1/France.png' },
-      { title: 'Russia - Lat: 61.5, Long: 105.3', src: '/captures/prop1/Russia.png' },
-      { title: 'New York - Lat: 43.0, Long: -75.0', src: '/captures/prop1/New York.png' },
-      { title: 'Texas - Lat: 31.0, Long: -100.0', src: '/captures/prop1/Texas.png' },
-      { title: 'California - Lat: 36.8, Long: -119.4', src: '/captures/prop1/California.png' }
+      { title: 'Arizona - Lat: 34.0, Long: -111.0', src: '/captures/prop3/Arizona.png' },
+      { title: 'California - Lat: 36.7, Long: -119.4', src: '/captures/prop3/California.png' },
+      { title: 'Hebei - Lat: 37.8, Long: 114.9', src: '/captures/prop3/Hebei.png' },
+      { title: 'Iowa - Lat: 42.0, Long: -93.5', src: '/captures/prop3/Iowa.png' },
+      { title: 'Massachusetts - Lat: 42.4, Long: -71.3', src: '/captures/prop3/Massachusetts.png' },
+      { title: 'Minnesota - Lat: 46.7, Long: -94.6', src: '/captures/prop3/Minnesota.png' },
+      { title: 'NSwitzerland - Lat: 46.8, Long: 8.2', src: '/captures/prop3/Switzerland.png' },
+      { title: 'Victoria - Lat: -37.8, Long: 145.0', src: '/captures/prop3/Victoria.png' },
+      { title: 'Wisconsin - Lat: 43.7, Long: -88.7', src: '/captures/prop3/Wisconsin.png' }
     ],
   },
   {
