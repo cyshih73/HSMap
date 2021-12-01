@@ -29,3 +29,14 @@
   width: fit-content;
   height: fit-content;
 }
+
+@media (max-width: 1000px) {
+  .propositionDiv {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-count: 1;
+  }
+}

@@ -13,7 +13,7 @@ const Propositions = () => {
       <div className={'customTab3'}>
         {
           propositions.map((data, idx) => {
-            return <div key={idx} className={(idx == currentView) ? 'tabPressed' : 'tabUnPressed'} onClick={() => {
+            return <div key={idx} className={(idx === currentView) ? 'tabPressed' : 'tabUnPressed'} onClick={() => {
               pressTab(idx)
             }}><span>{data.title}</span></div>
           })

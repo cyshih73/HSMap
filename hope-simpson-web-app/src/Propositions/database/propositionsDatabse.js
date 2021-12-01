@@ -100,7 +100,7 @@ const propositions = [
     description: "Concerning seasonal reactivation of Covid-19 virus",
     explanations: [
       {
-        key: "In a regional/geographic community, a respiratory virus earlier present in the community will exhibit a seasonal pattern of cases.Reemergence happens around and during the winter in a region",
+        key: "In a regional/geographic community, a respiratory virus earlier present in the community will exhibit a seasonal pattern of cases. Reemergence happens around and during the winter in a region",
         sup: [],
       },
     ],
