@@ -22,28 +22,30 @@ const Proposition = (props) => {
           )
         })}
       </div>
-      <div className={'propositionDiv'}>
-        {/* <h2 className={"title"}>{title}</h2> */}
-        {/* <h3 className={'propositionDesc'}>{description}</h3> */}
-        {images.map((image, idx) => {
-          // return (
-          //   <div>
-          //     <img className={'img-fluid'} key={idx} src={require('' + image)} />
-          //   </div>
-          // )
-          return (
-            // <div className="img-text-wrapper">
-            //   <div className='image_subtitle' key={idx}>{image.title}</div>
-            //   <div className="logo-wrapper">
-            //     <img className={'img-fluid'} key={idx} src={require('' + image.src)} />
+      <div className={'test'}>
+        <div className={'propositionDiv'}>
+          {/* <h2 className={"title"}>{title}</h2> */}
+          {/* <h3 className={'propositionDesc'}>{description}</h3> */}
+          {images.map((image, idx) => {
+            // return (
+            //   <div>
+            //     <img className={'img-fluid'} key={idx} src={require('' + image)} />
             //   </div>
-            // </div>
-            <figure className="position-relative" key={idx}>
-              <figcaption className={'image-subtitles'}>{image.title}</figcaption>
-              <img className={'img-thumbnail'} src={require('./database' + image.src)}/>
-            </figure>
-          )
-        })}
+            // )
+            return (
+              // <div className="img-text-wrapper">
+              //   <div className='image_subtitle' key={idx}>{image.title}</div>
+              //   <div className="logo-wrapper">
+              //     <img className={'img-fluid'} key={idx} src={require('' + image.src)} />
+              //   </div>
+              // </div>
+              <figure className="position-relative" key={idx}>
+                <figcaption className={'image-subtitles'}>{image.title}</figcaption>
+                <img className={'img-thumbnail'} src={require('./database' + image.src)}/>
+              </figure>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

@@ -25,18 +25,31 @@
   text-align: center;
 }
 
-.img-fluid {
+.position-relative {
   width: fit-content;
-  height: fit-content;
+  height: 240px;
 }
 
 @media (max-width: 1000px) {
   .propositionDiv {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     column-count: 1;
+  }
+
+  .propositionDesc {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .propositionExplain {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 15px;
   }
 }
