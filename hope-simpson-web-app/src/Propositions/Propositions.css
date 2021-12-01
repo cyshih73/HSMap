@@ -54,11 +54,10 @@
 @media (max-width: 1000px) {
   .propositionDiv {
     width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    column-count: 1;
   }
 
   .propositionDesc {
