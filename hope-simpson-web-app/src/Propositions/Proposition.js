@@ -10,7 +10,7 @@ const Proposition = (props) => {
         {explanations.map((explanation, eidx) => {
           return (
             <div key={eidx}>
-              <span className={'prop-exp'}>{'- ' + explanation.key}</span>
+              <span className={'prop-exp'}>{explanation.key}</span>
               <ul>
                 {explanation.sup.map((support) => {
                   return (
@@ -21,6 +21,7 @@ const Proposition = (props) => {
             </div>
           )
         })}
+        <br></br>
       </div>
       <div className={'test'}>
         <div className={'propositionDiv'}>
