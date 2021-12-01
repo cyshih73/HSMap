@@ -39,9 +39,9 @@ const Proposition = (props) => {
               //     <img className={'img-fluid'} key={idx} src={require('' + image.src)} />
               //   </div>
               // </div>
-              <figure className="position-relative" key={idx}>
+              <figure className={"image-block"} key={idx}>
                 <figcaption className={'image-subtitles'}>{image.title}</figcaption>
-                <img className={'img-thumbnail'} src={require('./database' + image.src)}/>
+                <img className={'img-thumbnail'} src={require('./database' + image.src)} />
               </figure>
             )
           })}
