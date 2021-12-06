@@ -226,45 +226,58 @@ const propositions = [
     explanations: [
       {
         key: "Local cases have been seen to rise and fall around the world",
-        sup: [],
+        sup: [
+            '"The phenomenon, christened the vanishing trick, has characterized most subsequent major and minor antigenic change of influenza A virus" --- Edgar Hope Simpson',
+        ],
+
       },
+
+      {
+        key: 'Both individual "tricky disappearing" trends and interactive trends among multiple have been observed',
+        sup: [
+          "An unprecedented reduction in flu prevalence has been observed for the 2020-  2021 season",
+          'Pathogen-to-pathogen interactions may have potential impact on this periodic "trick"'
+        ],
+
+      },
+
     ],
     images: [
       {
-        title: "Italy - Lat: 41.9, Long: 12.6",
-        src: "/captures/prop1/Italy.png",
+        title: "common A & B influenza in the US",
+        src: "/captures/prop6/pic_1_overview.png",
       },
       {
-        title: "United Kingdom - Lat: 55.4, Long: -3.4",
-        src: "/captures/prop1/United Kingdom.png",
+        title: "outbreak and \"re-emerging\" of A - H1N1",
+        src: "/captures/prop6/pic_2_H1N1.png",
       },
       {
-        title: "Germany - Lat: 51.2, Long: 10.5",
-        src: "/captures/prop1/Germany.png",
+        title: " latency and spike of B - Victoria",
+        src: "/captures/prop6/pic_3_Victoria.png",
       },
       {
-        title: "Japan - Lat: 36.2, Long: 138.3",
-        src: "/captures/prop1/Japan.png",
+        title: "synchronous  - influenza A",
+        src: "/captures/prop6/pic_4_synchronous.png",
       },
       {
-        title: "France - Lat: 46.2, Long: 2.2",
-        src: "/captures/prop1/France.png",
+        title: "synchronous \"disappearing tricks\" - influenza B",
+        src: "/captures/prop6/pic_5_synchronous.png",
       },
       {
-        title: "Russia - Lat: 61.5, Long: 105.3",
-        src: "/captures/prop1/Russia.png",
+        title: "asynchronous \"tricks\" - H1N1 and H3",
+        src: "/captures/prop6/pic_6_asynchronous.png",
       },
       {
-        title: "New York - Lat: 43.0, Long: -75.0",
-        src: "/captures/prop1/New York.png",
+        title: "asynchronous \"tricks\" - H1N1 and an influenza B",
+        src: "/captures/prop6/pic_7_asynchronous.png",
       },
       {
-        title: "Texas - Lat: 31.0, Long: -100.0",
-        src: "/captures/prop1/Texas.png",
+        title: "asynchronous \"tricks\" - COVID and common flu",
+        src: "/captures/prop6/pic_8_asynchronous.png",
       },
       {
-        title: "California - Lat: 36.8, Long: -119.4",
-        src: "/captures/prop1/California.png",
+        title: "asynchronous \"tricks\" - COVID zoom out",
+        src: "/captures/prop6/pic_9_asynchronous.png",
       },
     ],
   },
