@@ -105,15 +105,42 @@ const propositions = [
       },
     ],
     images: [
-      { title: 'Arizona - Lat: 34.0, Long: -111.0', src: '/captures/prop3/Arizona.png' },
-      { title: 'California - Lat: 36.7, Long: -119.4', src: '/captures/prop3/California.png' },
-      { title: 'Hebei - Lat: 37.8, Long: 114.9', src: '/captures/prop3/Hebei.png' },
-      { title: 'Iowa - Lat: 42.0, Long: -93.5', src: '/captures/prop3/Iowa.png' },
-      { title: 'Massachusetts - Lat: 42.4, Long: -71.3', src: '/captures/prop3/Massachusetts.png' },
-      { title: 'Minnesota - Lat: 46.7, Long: -94.6', src: '/captures/prop3/Minnesota.png' },
-      { title: 'NSwitzerland - Lat: 46.8, Long: 8.2', src: '/captures/prop3/Switzerland.png' },
-      { title: 'Victoria - Lat: -37.8, Long: 145.0', src: '/captures/prop3/Victoria.png' },
-      { title: 'Wisconsin - Lat: 43.7, Long: -88.7', src: '/captures/prop3/Wisconsin.png' },
+      {
+        title: "Arizona - Lat: 34.0, Long: -111.0",
+        src: "/captures/prop3/Arizona.png",
+      },
+      {
+        title: "California - Lat: 36.7, Long: -119.4",
+        src: "/captures/prop3/California.png",
+      },
+      {
+        title: "Hebei - Lat: 37.8, Long: 114.9",
+        src: "/captures/prop3/Hebei.png",
+      },
+      {
+        title: "Iowa - Lat: 42.0, Long: -93.5",
+        src: "/captures/prop3/Iowa.png",
+      },
+      {
+        title: "Massachusetts - Lat: 42.4, Long: -71.3",
+        src: "/captures/prop3/Massachusetts.png",
+      },
+      {
+        title: "Minnesota - Lat: 46.7, Long: -94.6",
+        src: "/captures/prop3/Minnesota.png",
+      },
+      {
+        title: "NSwitzerland - Lat: 46.8, Long: 8.2",
+        src: "/captures/prop3/Switzerland.png",
+      },
+      {
+        title: "Victoria - Lat: -37.8, Long: 145.0",
+        src: "/captures/prop3/Victoria.png",
+      },
+      {
+        title: "Wisconsin - Lat: 43.7, Long: -88.7",
+        src: "/captures/prop3/Wisconsin.png",
+      },
     ],
   },
   {
@@ -182,40 +209,45 @@ const propositions = [
     ],
     images: [
       {
-        title: "Italy - Lat: 41.9, Long: 12.6",
-        src: "/captures/prop1/Italy.png",
+        title: " France: 48°51′N 2°21′E & Hungary: 47°26′N 19°15′E",
+        src: "/captures/prop5/Fr+Hu.png",
       },
       {
-        title: "United Kingdom - Lat: 55.4, Long: -3.4",
-        src: "/captures/prop1/United Kingdom.png",
+        title: "Spain: 40°26′N 3°42′W & Poland: 52°13′N 21°02′E",
+        src: "/captures/prop5/Sp+Po.png",
       },
       {
-        title: "Germany - Lat: 51.2, Long: 10.5",
-        src: "/captures/prop1/Germany.png",
+        title: "Georgia: 41°43′N 44°47′E & Czechia: 50°05′N 14°28′E",
+        src: "/captures/prop5/Geo+Cze.png",
       },
       {
-        title: "Japan - Lat: 36.2, Long: 138.3",
-        src: "/captures/prop1/Japan.png",
+        title:
+          "Wisconsin: 43.7844° N, 88.7879° W & Utah: 39.3210° N, 111.0937° W",
+        src: "/captures/prop5/Wisc+UT.png",
       },
       {
-        title: "France - Lat: 46.2, Long: 2.2",
-        src: "/captures/prop1/France.png",
+        title:
+          "South Carolina: 33.8361° N, 81.1637° W & NC: 35.7596° N, 79.0193° W",
+        src: "/captures/prop5/SC+NC.png",
       },
       {
-        title: "Russia - Lat: 61.5, Long: 105.3",
-        src: "/captures/prop1/Russia.png",
+        title:
+          "Michigan: 44.3148° N, 85.6024° W & Minnesota: 46.7296° N, 94.6859° W",
+        src: "/captures/prop5/MI+Min.png",
       },
       {
-        title: "New York - Lat: 43.0, Long: -75.0",
-        src: "/captures/prop1/New York.png",
+        title:
+          "Netherlands: 52.1326° N, 5.2913° E & Belgium: 50.5039° N, 4.4699° E",
+        src: "/captures/prop5/Ne+Bel.png",
       },
       {
-        title: "Texas - Lat: 31.0, Long: -100.0",
-        src: "/captures/prop1/Texas.png",
+        title: "Iran: 32.4279° N, 53.6880° E & Ukraine: 48.3794° N, 31.1656° E",
+        src: "/captures/prop5/Ir+Ukra.png",
       },
       {
-        title: "California - Lat: 36.8, Long: -119.4",
-        src: "/captures/prop1/California.png",
+        title:
+          "Wisconsin: 43.7844° N, 88.7879° W & Italy: 41.8719° N, 12.5674° E",
+        src: "/captures/prop5/Wisc+ Italy.png",
       },
     ],
   },
@@ -227,20 +259,17 @@ const propositions = [
       {
         key: "Local cases have been seen to rise and fall around the world",
         sup: [
-            '"The phenomenon, christened the vanishing trick, has characterized most subsequent major and minor antigenic change of influenza A virus" --- Edgar Hope Simpson',
+          '"The phenomenon, christened the vanishing trick, has characterized most subsequent major and minor antigenic change of influenza A virus" --- Edgar Hope Simpson',
         ],
-
       },
 
       {
         key: 'Both individual "tricky disappearing" trends and interactive trends among multiple have been observed',
         sup: [
           "An unprecedented reduction in flu prevalence has been observed for the 2020-  2021 season",
-          'Pathogen-to-pathogen interactions may have potential impact on this periodic "trick"'
+          'Pathogen-to-pathogen interactions may have potential impact on this periodic "trick"',
         ],
-
       },
-
     ],
     images: [
       {
@@ -248,7 +277,7 @@ const propositions = [
         src: "/captures/prop6/pic_1_overview.png",
       },
       {
-        title: "outbreak and \"re-emerging\" of A - H1N1",
+        title: 'outbreak and "re-emerging" of A - H1N1',
         src: "/captures/prop6/pic_2_H1N1.png",
       },
       {
@@ -260,23 +289,23 @@ const propositions = [
         src: "/captures/prop6/pic_4_synchronous.png",
       },
       {
-        title: "synchronous \"disappearing tricks\" - influenza B",
+        title: 'synchronous "disappearing tricks" - influenza B',
         src: "/captures/prop6/pic_5_synchronous.png",
       },
       {
-        title: "asynchronous \"tricks\" - H1N1 and H3",
+        title: 'asynchronous "tricks" - H1N1 and H3',
         src: "/captures/prop6/pic_6_asynchronous.png",
       },
       {
-        title: "asynchronous \"tricks\" - H1N1 and an influenza B",
+        title: 'asynchronous "tricks" - H1N1 and an influenza B',
         src: "/captures/prop6/pic_7_asynchronous.png",
       },
       {
-        title: "asynchronous \"tricks\" - COVID and common flu",
+        title: 'asynchronous "tricks" - COVID and common flu',
         src: "/captures/prop6/pic_8_asynchronous.png",
       },
       {
-        title: "asynchronous \"tricks\" - COVID zoom out",
+        title: 'asynchronous "tricks" - COVID zoom out',
         src: "/captures/prop6/pic_9_asynchronous.png",
       },
     ],
