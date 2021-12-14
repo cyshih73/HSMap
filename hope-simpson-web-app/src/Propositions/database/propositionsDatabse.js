@@ -247,7 +247,7 @@ const propositions = [
       {
         title:
           "Wisconsin: 43.7844° N, 88.7879° W & Italy: 41.8719° N, 12.5674° E",
-        src: "/captures/prop5/Wisc+ Italy.png",
+        src: "/captures/prop5/Wisc + Italy.png",
       },
     ],
   },
