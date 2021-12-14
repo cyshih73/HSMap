@@ -1,6 +1,6 @@
 const propositions = [
   {
-    title: "Propositions1",
+    title: "Proposition1",
     description: "Concerning the lack of persistent spread of Covid- 19 virus",
     explanations: [
       {
@@ -48,7 +48,7 @@ const propositions = [
     ],
   },
   {
-    title: "Propositions2",
+    title: "Proposition2",
     description: "Concerning the distribution of cases over time",
     explanations: [
       {
@@ -96,7 +96,7 @@ const propositions = [
     ],
   },
   {
-    title: "Propositions3",
+    title: "Proposition3",
     description: "Concerning seasonal reactivation of Covid-19 virus",
     explanations: [
       {
@@ -144,7 +144,7 @@ const propositions = [
     ],
   },
   {
-    title: "Propositions4",
+    title: "Proposition4",
     description:
       'Concerning Covid-19 viral epidemics that occur "out of season"',
     explanations: [
@@ -196,7 +196,7 @@ const propositions = [
     ],
   },
   {
-    title: "Propositions5",
+    title: "Proposition5",
     description: "Concerning the speed of epidemic travel of Covid-19 virus",
     explanations: [
       {
@@ -252,7 +252,7 @@ const propositions = [
     ],
   },
   {
-    title: "Propositions6",
+    title: "Proposition6",
     description:
       "Concerning the diminishing and increasing of cases of respiratory viruses between successive seasons.",
     explanations: [
