@@ -14,7 +14,7 @@ const Proposition = (props) => {
               <ul>
                 {explanation.sup.map((support) => {
                   return (
-                    <li>{support}</li>
+                    <li key={support}>{support}</li>
                   )
                 })}
               </ul>
@@ -25,21 +25,8 @@ const Proposition = (props) => {
       </div>
       <div className={'test'}>
         <div className={'propositionDiv'}>
-          {/* <h2 className={"title"}>{title}</h2> */}
-          {/* <h3 className={'propositionDesc'}>{description}</h3> */}
           {images.map((image, idx) => {
-            // return (
-            //   <div>
-            //     <img className={'img-fluid'} key={idx} src={require('' + image)} />
-            //   </div>
-            // )
             return (
-              // <div className="img-text-wrapper">
-              //   <div className='image_subtitle' key={idx}>{image.title}</div>
-              //   <div className="logo-wrapper">
-              //     <img className={'img-fluid'} key={idx} src={require('' + image.src)} />
-              //   </div>
-              // </div>
               <figure className={"image-block"} key={idx}>
                 <figcaption className={'image-subtitles'}>{image.title}</figcaption>
                 <img className={'img-thumbnail'} src={require('./database' + image.src)} />
