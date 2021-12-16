@@ -215,47 +215,47 @@ const propositions = [
     images: [
       {
         title:
-          " Colorado: 39.5501° N, 105.7821° W & Pennsylvania: 41.2033° N, 77.1945° W",
+          " Colorado: 39.5501° N, 105.7821° W & \nPennsylvania: 41.2033° N, 77.1945° W",
         src: "/captures/prop5/CO,PA.png",
       },
       {
         title:
-          "Ireland: 53.1424° N, 7.6921° W & Germany: 51.1657° N, 10.4515° E",
+          "Ireland: 53.1424° N, 7.6921° W & \nGermany: 51.1657° N, 10.4515° E",
         src: "/captures/prop5/Ire,Ger.png",
       },
       {
         title:
-          "New York: 40.7128° N, 74.0060° W & United Kingdom: 55.3781° N, 3.4360° W",
+          "New York: 40.7128° N, 74.0060° W & \nUnited Kingdom: 55.3781° N, 3.4360° W",
         src: "/captures/prop5/NY,UK.png",
       },
       {
         title:
-          "Pennsylvania: 41.2033° N, 77.1945° W & Oregon: 43.8041° N, 120.5542° W",
+          "Pennsylvania: 41.2033° N, 77.1945° W & \nOregon: 43.8041° N, 120.5542° W",
         src: "/captures/prop5/PA,OG.png",
       },
       {
         title:
-          "Denmark: 56.2639° N, 9.5018° E & Greece: 39.0742° N, 21.8243° E",
+          "Denmark: 56.2639° N, 9.5018° E & \nGreece: 39.0742° N, 21.8243° E",
         src: "/captures/prop5/DK,Gr.png",
       },
       {
         title:
-          "Estonia: 58.5953° N, 25.0136° E & Egypt: 26.8206° N, 30.8025° E",
+          "Estonia: 58.5953° N, 25.0136° E & \nEgypt: 26.8206° N, 30.8025° E",
         src: "/captures/prop5/Est,Eg.png",
       },
       {
         title:
-          "Greece: 39.0742° N, 21.8243° E & Belgium: 50.5039° N, 4.4699° E",
+          "Greece: 39.0742° N, 21.8243° E & \nBelgium: 50.5039° N, 4.4699° E",
         src: "/captures/prop5/Gr,Bel.png",
       },
       {
         title:
-          "Jordan: 30.5852° N, 36.2384° E & Slovakia: 48.6690° N, 19.6990° E",
+          "Jordan: 30.5852° N, 36.2384° E & \nSlovakia: 48.6690° N, 19.6990° E",
         src: "/captures/prop5/Jor,Slo.png",
       },
       {
         title:
-          "Wisconsin: 43.7844° N, 88.7879° W & Italy: 41.8719° N, 12.5674° E",
+          "Wisconsin: 43.7844° N, 88.7879° W & \nItaly: 41.8719° N, 12.5674° E",
         src: "/captures/prop5/Wisc + Italy.png",
       },
     ],

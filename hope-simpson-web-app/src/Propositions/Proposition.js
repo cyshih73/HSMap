@@ -21,7 +21,7 @@ const ListEx = (item) => {
 }
 
 const Proposition = (props) => {
-  const { title, description, explanations, images, subtitles } = props;
+  const { title, description, explanations, images } = props;
   return (
     <div>
       <h3 className={'propositionDesc'}>{title + ': ' + description}</h3>

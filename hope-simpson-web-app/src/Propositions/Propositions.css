@@ -1,4 +1,3 @@
-
 .propositionDiv {
   width: 80%;
   display: grid;
@@ -38,6 +37,7 @@
 }
 
 .image-subtitles {
+  white-space: pre-wrap;
   text-align: center;
 }
 
