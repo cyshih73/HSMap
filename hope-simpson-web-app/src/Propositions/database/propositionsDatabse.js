@@ -1,10 +1,10 @@
 const propositions = [
   {
-    title: "Proposition1",
+    title: "Proposition 1",
     description: "Concerning the lack of persistent spread of Covid- 19 virus",
     explanations: [
       {
-        key: "Local cases have been seen to rise and fall around the world",
+        key: "Local cases have been seen to rise and fall around the world.",
         sup: [],
       },
     ],
@@ -48,11 +48,11 @@ const propositions = [
     ],
   },
   {
-    title: "Proposition2",
+    title: "Proposition 2",
     description: "Concerning the distribution of cases over time",
     explanations: [
       {
-        key: "Rise and fall of outbreaks follow a bell-shaped curve",
+        key: "Rise and fall of outbreaks follow a bell-shaped curve.",
         sup: [],
       },
     ],
@@ -96,11 +96,11 @@ const propositions = [
     ],
   },
   {
-    title: "Proposition3",
+    title: "Proposition 3",
     description: "Concerning seasonal reactivation of Covid-19 virus",
     explanations: [
       {
-        key: "In a regional/geographic community, a respiratory virus earlier present in the community will exhibit a seasonal pattern of cases. Reemergence happens around and during the winter in a region",
+        key: "In a regional/geographic community, a respiratory virus earlier present in the community will exhibit a seasonal pattern of cases. Reemergence happens around and during the winter in a region.",
         sup: [],
       },
     ],
@@ -144,7 +144,7 @@ const propositions = [
     ],
   },
   {
-    title: "Proposition4",
+    title: "Proposition 4",
     description:
       'Concerning Covid-19 viral epidemics that occur "out of season"',
     explanations: [
@@ -152,7 +152,7 @@ const propositions = [
         key: "An out-of-season outbreak must be caused by",
         sup: [
           "New variant(s), to which the population is largely nonimmune, per Proposition 1.",
-          'Brought into the community from outside carriers, per Proposition 1. This mechanism is known as "carriage"',
+          'Brought into the community from outside carriers, per Proposition 1. This mechanism is known as "carriage".',
         ],
       },
     ],
@@ -196,14 +196,14 @@ const propositions = [
     ],
   },
   {
-    title: "Proposition5",
+    title: "Proposition 5",
     description: "Concerning the speed of epidemic travel of Covid-19 virus",
     explanations: [
       {
         key: "Propositions 3, 4, and 6 imply three forms of signal patterns for the virus",
         sup: [
-          "a more synchronous rapid onset due to seasonality and a variant that previously appeared in the community",
-          "a more asynchronous out-of-season outbreak due to carriage",
+          "a more synchronous rapid onset due to seasonality and a variant that previously appeared in the community.",
+          "a more asynchronous out-of-season outbreak due to carriage.",
         ],
       },
     ],
@@ -252,22 +252,22 @@ const propositions = [
     ],
   },
   {
-    title: "Proposition6",
+    title: "Proposition 6",
     description:
-      "Concerning the diminishing and increasing of cases of respiratory viruses between successive seasons.",
+      "Concerning the diminishing and increasing of cases of respiratory viruses between successive seasons",
     explanations: [
       {
         key: "Local cases have been seen to rise and fall around the world",
         sup: [
-          '"The phenomenon, christened the vanishing trick, has characterized most subsequent major and minor antigenic change of influenza A virus" --- Edgar Hope Simpson',
+          '"The phenomenon, christened the vanishing trick, has characterized most subsequent major and minor antigenic change of influenza A virus" --- Edgar Hope Simpson.',
         ],
       },
 
       {
         key: 'Both individual "tricky disappearing" trends and interactive trends among multiple have been observed',
         sup: [
-          "An unprecedented reduction in flu prevalence has been observed for the 2020-  2021 season",
-          'Pathogen-to-pathogen interactions may have potential impact on this periodic "trick"',
+          "An unprecedented reduction in flu prevalence has been observed for the 2020-2021 season.",
+          'Pathogen-to-pathogen interactions may have potential impact on this periodic "trick".',
         ],
       },
     ],
