@@ -261,19 +261,12 @@ const propositions = [
       "Concerning the diminishing and increasing of cases of respiratory viruses between successive seasons",
     explanations: [
       {
-        key: "Local cases have been seen to rise and fall around the world",
+        key: "When there is more than one respiratory virus in a community, for some seasons the cases of one of the viruses may be significantly diminished (“disappear”) and in a later season have its number of cases significantly increased (“reappear”).",
         sup: [
-          '"The phenomenon, christened the vanishing trick, has characterized most subsequent major and minor antigenic change of influenza A virus" --- Edgar Hope Simpson.',
+          'This is the so-called “vanishing trick”','This phenomenon is not conclusively understood.'
         ],
       },
 
-      {
-        key: 'Both individual "tricky disappearing" trends and interactive trends among multiple have been observed',
-        sup: [
-          "An unprecedented reduction in flu prevalence has been observed for the 2020-2021 season.",
-          'Pathogen-to-pathogen interactions may have potential impact on this periodic "trick".',
-        ],
-      },
     ],
     images: [
       {
@@ -305,12 +298,12 @@ const propositions = [
         src: "/captures/prop6/pic_7_asynchronous.png",
       },
       {
-        title: 'asynchronous "tricks" - COVID and common flu',
-        src: "/captures/prop6/pic_8_asynchronous.png",
+        title: 'asynchronous "tricks" - COVID and "vanished" common flu',
+        src: "/captures/prop6/pic_9_asynchronous.png",
       },
       {
-        title: 'asynchronous "tricks" - COVID zoom out',
-        src: "/captures/prop6/pic_9_asynchronous.png",
+        title: 'asynchronous "tricks" - zoom in on the "vanished" flu',
+        src: "/captures/prop6/pic_8_asynchronous.png",
       },
     ],
   },
