@@ -202,8 +202,13 @@ const propositions = [
       {
         key: "Propositions 3, 4, and 6 imply three forms of signal patterns for the virus",
         sup: [
-          "a more synchronous rapid onset due to seasonality and a variant that previously appeared in the community.",
-          "a more asynchronous out-of-season outbreak due to carriage.",
+          ["a more synchronous rapid onset due to seasonality and a variant that previously appeared in the community.",
+            [
+              'The virus may appear seasonally or',
+              'The virus may ‘vanish’ for a season'
+            ]
+          ],
+          ["a more asynchronous out-of-season outbreak due to carriage."],
         ],
       },
     ],
@@ -263,7 +268,7 @@ const propositions = [
       {
         key: "When there is more than one respiratory virus in a community, for some seasons the cases of one of the viruses may be significantly diminished (“disappear”) and in a later season have its number of cases significantly increased (“reappear”).",
         sup: [
-          'This is the so-called “vanishing trick”','This phenomenon is not conclusively understood.'
+          'This is the so-called “vanishing trick”', 'This phenomenon is not conclusively understood.'
         ],
       },
 

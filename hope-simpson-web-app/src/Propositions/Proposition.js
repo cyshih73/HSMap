@@ -1,6 +1,25 @@
 import React from 'react';
 import './Propositions.css';
 
+const ListEx = (item) => {
+  let ex = null;
+  if (Array.isArray(item.item) && item.item.length > 0) {
+    ex = (
+      <ul>
+        {item.item.map((support) => <ListEx item={support} key={support} />)}
+      </ul>
+    );
+  }
+  else {
+    ex = (!Array.isArray(item.item) && item.item !== '') || (Array.isArray(item.item) && item.item.length !== 0) ? (
+      <li>
+        {item.item}
+      </li>
+    ) : ''
+  }
+  return ex;
+}
+
 const Proposition = (props) => {
   const { title, description, explanations, images, subtitles } = props;
   return (
@@ -11,13 +30,7 @@ const Proposition = (props) => {
           return (
             <div key={eidx}>
               <span className={'prop-exp'}>{explanation.key}</span>
-              <ul>
-                {explanation.sup.map((support) => {
-                  return (
-                    <li key={support}>{support}</li>
-                  )
-                })}
-              </ul>
+              {<ListEx item={explanation.sup} />}
             </div>
           )
         })}
