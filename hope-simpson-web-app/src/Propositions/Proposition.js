@@ -11,6 +11,7 @@ const ListEx = (item) => {
     );
   }
   else {
+    console.log(item.item)
     ex = (!Array.isArray(item.item) && item.item !== '') || (Array.isArray(item.item) && item.item.length !== 0) ? (
       <li>
         {item.item}

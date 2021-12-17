@@ -1,3 +1,4 @@
+import React from 'react'
 const propositions = [
   {
     title: "Proposition 1",
@@ -100,7 +101,7 @@ const propositions = [
     description: "Concerning seasonal reactivation of Covid-19 virus",
     explanations: [
       {
-        key: "In a regional/geographic community, a respiratory virus earlier present in the community will exhibit a seasonal pattern of cases. Reemergence happens around and during the winter in a region.",
+        key: "In a regional/geographic community, a respiratory virus earlier present in the community will later exhibit a seasonal pattern of cases. Reemergence happens around and during the winter in a region.",
         sup: [],
       },
     ],
@@ -182,7 +183,7 @@ const propositions = [
         src: "/captures/prop4/SC.png",
       },
       {
-        title: "Harris - Lat: 29.758938, Long: -95.367697",
+        title: "Harris County - Lat: 29.758938, Long: -95.367697",
         src: "/captures/prop4/Harris.png",
       },
       {
@@ -202,7 +203,7 @@ const propositions = [
       {
         key: "Propositions 3, 4, and 6 imply three forms of signal patterns for the virus",
         sup: [
-          ["a more synchronous rapid onset due to seasonality and a variant that previously appeared in the community.",
+          [<p>a more synchronous <b>rapid onset</b> due to seasonality and a variant that previously appeared in the community.</p>,
             [
               'The virus may appear seasonally or',
               'The virus may ‘vanish’ for a season'
