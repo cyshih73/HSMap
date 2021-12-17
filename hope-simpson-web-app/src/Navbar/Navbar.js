@@ -27,11 +27,11 @@ class Navbar extends Component{
                     </div>
                     <div className={"linksDiv"}>
                         <a href={"/"}><div>Home</div></a>
+                        <a href={"/propositions"}><div>Propositions</div></a>
                         <a href={"/about"}><div>About</div></a>
                         <a href={"/map/tableau"}><div>Tableau Map</div></a>
                         <a href={"/map/gds"}><div>GDS Map</div></a>
                         <a href={"/modeling"}><div>Modeling</div></a>
-                        <a href={"/propositions"}><div>Propositions</div></a>
                         <a href={"/team"}><div>Team</div></a>
                     </div>
                 </div>
